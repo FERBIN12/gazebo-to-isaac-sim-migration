@@ -1,0 +1,173 @@
+{
+  "/clock": {
+    "publishers": 1,
+    "offered": {
+      "reliability": "RELIABLE",
+      "durability": "VOLATILE"
+    },
+    "profiles": {
+      "default (RELIABLE/VOLATILE)": {
+        "matches": true,
+        "gets_history": true,
+        "reason": "matches"
+      },
+      "sensor_data (BEST_EFFORT/VOLATILE)": {
+        "matches": true,
+        "gets_history": true,
+        "reason": "matches"
+      },
+      "latched (RELIABLE/TRANSIENT_LOCAL)": {
+        "matches": false,
+        "gets_history": false,
+        "reason": "TRANSIENT_LOCAL subscriber vs VOLATILE publisher"
+      }
+    }
+  },
+  "/depth": {
+    "publishers": 1,
+    "offered": {
+      "reliability": "RELIABLE",
+      "durability": "VOLATILE"
+    },
+    "profiles": {
+      "default (RELIABLE/VOLATILE)": {
+        "matches": true,
+        "gets_history": true,
+        "reason": "matches"
+      },
+      "sensor_data (BEST_EFFORT/VOLATILE)": {
+        "matches": true,
+        "gets_history": true,
+        "reason": "matches"
+      },
+      "latched (RELIABLE/TRANSIENT_LOCAL)": {
+        "matches": false,
+        "gets_history": false,
+        "reason": "TRANSIENT_LOCAL subscriber vs VOLATILE publisher"
+      }
+    }
+  },
+  "/diff_drive_base_controller/cmd_vel": {
+    "publishers": 0
+  },
+  "/diff_drive_base_controller/odom": {
+    "publishers": 1,
+    "offered": {
+      "reliability": "RELIABLE",
+      "durability": "TRANSIENT_LOCAL"
+    },
+    "profiles": {
+      "default (RELIABLE/VOLATILE)": {
+        "matches": true,
+        "gets_history": false,
+        "reason": "matches, but a late joiner misses the latched history"
+      },
+      "sensor_data (BEST_EFFORT/VOLATILE)": {
+        "matches": true,
+        "gets_history": false,
+        "reason": "matches, but a late joiner misses the latched history"
+      },
+      "latched (RELIABLE/TRANSIENT_LOCAL)": {
+        "matches": true,
+        "gets_history": true,
+        "reason": "matches"
+      }
+    }
+  },
+  "/joint_states": {
+    "publishers": 1,
+    "offered": {
+      "reliability": "RELIABLE",
+      "durability": "TRANSIENT_LOCAL"
+    },
+    "profiles": {
+      "default (RELIABLE/VOLATILE)": {
+        "matches": true,
+        "gets_history": false,
+        "reason": "matches, but a late joiner misses the latched history"
+      },
+      "sensor_data (BEST_EFFORT/VOLATILE)": {
+        "matches": true,
+        "gets_history": false,
+        "reason": "matches, but a late joiner misses the latched history"
+      },
+      "latched (RELIABLE/TRANSIENT_LOCAL)": {
+        "matches": true,
+        "gets_history": true,
+        "reason": "matches"
+      }
+    }
+  },
+  "/scan": {
+    "publishers": 1,
+    "offered": {
+      "reliability": "RELIABLE",
+      "durability": "VOLATILE"
+    },
+    "profiles": {
+      "default (RELIABLE/VOLATILE)": {
+        "matches": true,
+        "gets_history": true,
+        "reason": "matches"
+      },
+      "sensor_data (BEST_EFFORT/VOLATILE)": {
+        "matches": true,
+        "gets_history": true,
+        "reason": "matches"
+      },
+      "latched (RELIABLE/TRANSIENT_LOCAL)": {
+        "matches": false,
+        "gets_history": false,
+        "reason": "TRANSIENT_LOCAL subscriber vs VOLATILE publisher"
+      }
+    }
+  },
+  "/tf": {
+    "publishers": 1,
+    "offered": {
+      "reliability": "RELIABLE",
+      "durability": "VOLATILE"
+    },
+    "profiles": {
+      "default (RELIABLE/VOLATILE)": {
+        "matches": true,
+        "gets_history": true,
+        "reason": "matches"
+      },
+      "sensor_data (BEST_EFFORT/VOLATILE)": {
+        "matches": true,
+        "gets_history": true,
+        "reason": "matches"
+      },
+      "latched (RELIABLE/TRANSIENT_LOCAL)": {
+        "matches": false,
+        "gets_history": false,
+        "reason": "TRANSIENT_LOCAL subscriber vs VOLATILE publisher"
+      }
+    }
+  },
+  "/tf_static": {
+    "publishers": 1,
+    "offered": {
+      "reliability": "RELIABLE",
+      "durability": "TRANSIENT_LOCAL"
+    },
+    "profiles": {
+      "default (RELIABLE/VOLATILE)": {
+        "matches": true,
+        "gets_history": false,
+        "reason": "matches, but a late joiner misses the latched history"
+      },
+      "sensor_data (BEST_EFFORT/VOLATILE)": {
+        "matches": true,
+        "gets_history": false,
+        "reason": "matches, but a late joiner misses the latched history"
+      },
+      "latched (RELIABLE/TRANSIENT_LOCAL)": {
+        "matches": true,
+        "gets_history": true,
+        "reason": "matches"
+      }
+    }
+  }
+}

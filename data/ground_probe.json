@@ -1,0 +1,74 @@
+{
+  "engine": "isaac-physx",
+  "damping": 1.0,
+  "physics_dt": 0.005,
+  "gazebo_reference_dyaw": 1.857,
+  "uniform_ground": [
+    {
+      "mu": 0.05,
+      "dyaw_rad": 1.5545,
+      "vs_gazebo_pct": 16.3
+    },
+    {
+      "mu": 0.2,
+      "dyaw_rad": 1.5553,
+      "vs_gazebo_pct": 16.2
+    },
+    {
+      "mu": 0.5,
+      "dyaw_rad": 1.5504,
+      "vs_gazebo_pct": 16.5
+    },
+    {
+      "mu": 1.0,
+      "dyaw_rad": 1.551,
+      "vs_gazebo_pct": 16.5
+    },
+    {
+      "mu": 2.0,
+      "dyaw_rad": 1.5228,
+      "vs_gazebo_pct": 18.0
+    }
+  ],
+  "per_shape_overrides": [
+    {
+      "wheel_mu": 1.0,
+      "caster_mu": 1.0,
+      "ratio": 1.0,
+      "bound": true,
+      "dyaw_rad": 1.5424,
+      "vs_gazebo_pct": 16.9
+    },
+    {
+      "wheel_mu": 1.0,
+      "caster_mu": 0.05,
+      "ratio": 20.0,
+      "bound": true,
+      "dyaw_rad": 1.5431,
+      "vs_gazebo_pct": 16.9
+    },
+    {
+      "wheel_mu": 0.5,
+      "caster_mu": 0.05,
+      "ratio": 10.0,
+      "bound": true,
+      "dyaw_rad": 1.5468,
+      "vs_gazebo_pct": 16.7
+    },
+    {
+      "wheel_mu": 1.0,
+      "caster_mu": 0.5,
+      "ratio": 2.0,
+      "bound": true,
+      "dyaw_rad": 1.5418,
+      "vs_gazebo_pct": 17.0
+    }
+  ],
+  "uniform_monotone_in_mu": false,
+  "uniform_range_rad": [
+    1.5228,
+    1.5553
+  ],
+  "best_uniform_vs_gazebo_pct": 16.2,
+  "best_override_vs_gazebo_pct": 16.7
+}

@@ -1,0 +1,226 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.1.3"
+    }
+    defaultPrim = "rover"
+    doc = """Generated from Composed Stage of root layer /tmp/tmp4blixr3e/rover.usdc
+
+
+Generated from Composed Stage of root layer /tmp/urdf_import_rover_jfzx9xae/usdex_rover/rover.usdc
+
+
+Generated from Composed Stage of root layer /tmp/urdf_import_rover_jfzx9xae/temp_rover/rover.usd
+
+
+Generated from Composed Stage of root layer /home/ferbin/gazebo-to-isaac-migration/sim-workspace/isaac/rover.usd/rover/payloads/base.usd
+"""
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+over "rover"
+{
+    over "Geometry"
+    {
+        over "base_footprint"
+        {
+            over "base_link" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsArticulationRootAPI", "NewtonArticulationRootAPI", "PhysicsMassAPI"]
+            )
+            {
+                bool newton:selfCollisionEnabled = 0
+                float3 physics:diagonalInertia = (0.0446, 0.085, 0.1192)
+                float physics:mass = 6
+                quatf physics:principalAxes = (1, 0, 0, 0)
+
+                over "left_wheel" (
+                    prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                    point3f physics:centerOfMass = (0, 0, 0)
+                    float3 physics:diagonalInertia = (0.000769, 0.000769, 0.001406)
+                    float physics:mass = 0.5
+                    quatf physics:principalAxes = (0.70710677, 0.70710677, 0, 0)
+
+                    over "cylinder_1" (
+                        prepend apiSchemas = ["NewtonCollisionAPI"]
+                    )
+                    {
+                    }
+                }
+
+                over "right_wheel" (
+                    prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                    point3f physics:centerOfMass = (0, 0, 0)
+                    float3 physics:diagonalInertia = (0.000769, 0.000769, 0.001406)
+                    float physics:mass = 0.5
+                    quatf physics:principalAxes = (0.70710677, 0.70710677, 0, 0)
+
+                    over "cylinder_1" (
+                        prepend apiSchemas = ["NewtonCollisionAPI"]
+                    )
+                    {
+                    }
+                }
+
+                over "caster" (
+                    prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                    float3 physics:diagonalInertia = (0.000054, 0.000054, 0.000054)
+                    float physics:mass = 0.15
+                    quatf physics:principalAxes = (1, 0, 0, 0)
+
+                    over "sphere_1" (
+                        prepend apiSchemas = ["NewtonCollisionAPI"]
+                    )
+                    {
+                    }
+                }
+
+                over "mast" (
+                    prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                )
+                {
+                    float3 physics:diagonalInertia = (0.00006, 0.00085, 0.00085)
+                    float physics:mass = 0.3
+                    quatf physics:principalAxes = (0.5, 0.5, 0.5, 0.5)
+
+                    over "lidar_link" (
+                        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                    )
+                    {
+                        float3 physics:diagonalInertia = (0.000044, 0.000044, 0.000061)
+                        float physics:mass = 0.1
+                        quatf physics:principalAxes = (1, 0, 0, 0)
+
+                        over "cylinder" (
+                            prepend apiSchemas = ["NewtonCollisionAPI"]
+                        )
+                        {
+                        }
+                    }
+
+                    over "camera_link" (
+                        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+                    )
+                    {
+                        float3 physics:diagonalInertia = (0.000006, 0.000059, 0.000059)
+                        float physics:mass = 0.08
+                        quatf physics:principalAxes = (6.123234e-17, 0.70710677, 0.70710677, 0)
+                    }
+
+                    over "cylinder_1" (
+                        prepend apiSchemas = ["NewtonCollisionAPI"]
+                    )
+                    {
+                    }
+                }
+
+                over "box_1" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+            }
+        }
+    }
+
+    over "Physics"
+    {
+        def PhysicsRevoluteJoint "left_wheel_joint" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.01
+            float drive:angular:physics:maxForce = 12
+            uniform token physics:axis = "Y"
+            custom rel physics:body0
+            prepend rel physics:body0 = </rover/Geometry/base_footprint/base_link>
+            custom rel physics:body1
+            prepend rel physics:body1 = </rover/Geometry/base_footprint/base_link/left_wheel>
+            point3f physics:localPos0 = (0, 0.15, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            custom float urdf:dynamics:damping = 0.01
+            custom float urdf:dynamics:friction = 0
+            custom float urdf:limit:effort = 12
+            custom float urdf:limit:velocity = 8
+        }
+
+        def PhysicsRevoluteJoint "right_wheel_joint" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.01
+            float drive:angular:physics:maxForce = 12
+            uniform token physics:axis = "Y"
+            custom rel physics:body0
+            prepend rel physics:body0 = </rover/Geometry/base_footprint/base_link>
+            custom rel physics:body1
+            prepend rel physics:body1 = </rover/Geometry/base_footprint/base_link/right_wheel>
+            point3f physics:localPos0 = (0, -0.15, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            custom float urdf:dynamics:damping = 0.01
+            custom float urdf:dynamics:friction = 0
+            custom float urdf:limit:effort = 12
+            custom float urdf:limit:velocity = 8
+        }
+
+        def PhysicsFixedJoint "caster_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </rover/Geometry/base_footprint/base_link>
+            custom rel physics:body1
+            prepend rel physics:body1 = </rover/Geometry/base_footprint/base_link/caster>
+            point3f physics:localPos0 = (-0.15, 0, -0.045)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "mast_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </rover/Geometry/base_footprint/base_link>
+            custom rel physics:body1
+            prepend rel physics:body1 = </rover/Geometry/base_footprint/base_link/mast>
+            point3f physics:localPos0 = (0.1, 0, 0.14)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "lidar_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </rover/Geometry/base_footprint/base_link/mast>
+            custom rel physics:body1
+            prepend rel physics:body1 = </rover/Geometry/base_footprint/base_link/mast/lidar_link>
+            point3f physics:localPos0 = (0, 0, 0.11)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def PhysicsFixedJoint "camera_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </rover/Geometry/base_footprint/base_link/mast>
+            custom rel physics:body1
+            prepend rel physics:body1 = </rover/Geometry/base_footprint/base_link/mast/camera_link>
+            point3f physics:localPos0 = (0.03, 0, 0.04)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+    }
+}
+

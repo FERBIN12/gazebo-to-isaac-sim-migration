@@ -1,0 +1,709 @@
+{
+  "rows": [
+    {
+      "link": "base_footprint",
+      "field": "mass",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "link": "base_footprint",
+      "field": "inertia",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "link": "base_footprint",
+      "field": "origin",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "link": "base_footprint",
+      "field": "collision_type",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "link": "base_footprint",
+      "field": "collision_dims",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "link": "base_link",
+      "field": "mass",
+      "urdf": 6.0,
+      "isaac": 6.0,
+      "same": true
+    },
+    {
+      "link": "base_link",
+      "field": "inertia",
+      "urdf": [
+        0.0446,
+        0.085,
+        0.1192
+      ],
+      "isaac": [
+        0.0446,
+        0.085,
+        0.1192
+      ],
+      "same": true
+    },
+    {
+      "link": "base_link",
+      "field": "origin",
+      "urdf": [
+        0.0,
+        0.0,
+        0.075
+      ],
+      "isaac": [
+        0.0,
+        0.0,
+        0.075
+      ],
+      "same": true
+    },
+    {
+      "link": "base_link",
+      "field": "collision_type",
+      "urdf": "box",
+      "isaac": "box",
+      "same": true
+    },
+    {
+      "link": "base_link",
+      "field": "collision_dims",
+      "urdf": {
+        "size": [
+          0.4,
+          0.28,
+          0.1
+        ]
+      },
+      "isaac": {
+        "size": [
+          0.4,
+          0.28,
+          0.1
+        ]
+      },
+      "same": true
+    },
+    {
+      "link": "left_wheel",
+      "field": "mass",
+      "urdf": 0.5,
+      "isaac": 0.5,
+      "same": true
+    },
+    {
+      "link": "left_wheel",
+      "field": "inertia",
+      "urdf": [
+        0.000769,
+        0.001406,
+        0.000769
+      ],
+      "isaac": [
+        0.000769,
+        0.001405999911,
+        0.000768999951
+      ],
+      "same": true
+    },
+    {
+      "link": "left_wheel",
+      "field": "origin",
+      "urdf": [
+        0.0,
+        0.15,
+        0.0
+      ],
+      "isaac": [
+        0.0,
+        0.15,
+        0.0
+      ],
+      "same": true
+    },
+    {
+      "link": "left_wheel",
+      "field": "collision_type",
+      "urdf": "cylinder",
+      "isaac": "cylinder",
+      "same": true
+    },
+    {
+      "link": "left_wheel",
+      "field": "collision_dims",
+      "urdf": {
+        "radius": 0.075,
+        "length": 0.04
+      },
+      "isaac": {
+        "radius": 0.075,
+        "length": 0.04
+      },
+      "same": true
+    },
+    {
+      "link": "right_wheel",
+      "field": "mass",
+      "urdf": 0.5,
+      "isaac": 0.5,
+      "same": true
+    },
+    {
+      "link": "right_wheel",
+      "field": "inertia",
+      "urdf": [
+        0.000769,
+        0.001406,
+        0.000769
+      ],
+      "isaac": [
+        0.000769,
+        0.001405999911,
+        0.000768999951
+      ],
+      "same": true
+    },
+    {
+      "link": "right_wheel",
+      "field": "origin",
+      "urdf": [
+        0.0,
+        -0.15,
+        0.0
+      ],
+      "isaac": [
+        0.0,
+        -0.15,
+        0.0
+      ],
+      "same": true
+    },
+    {
+      "link": "right_wheel",
+      "field": "collision_type",
+      "urdf": "cylinder",
+      "isaac": "cylinder",
+      "same": true
+    },
+    {
+      "link": "right_wheel",
+      "field": "collision_dims",
+      "urdf": {
+        "radius": 0.075,
+        "length": 0.04
+      },
+      "isaac": {
+        "radius": 0.075,
+        "length": 0.04
+      },
+      "same": true
+    },
+    {
+      "link": "caster",
+      "field": "mass",
+      "urdf": 0.15,
+      "isaac": 0.15,
+      "same": true
+    },
+    {
+      "link": "caster",
+      "field": "inertia",
+      "urdf": [
+        5.4e-05,
+        5.4e-05,
+        5.4e-05
+      ],
+      "isaac": [
+        5.4e-05,
+        5.4e-05,
+        5.4e-05
+      ],
+      "same": true
+    },
+    {
+      "link": "caster",
+      "field": "origin",
+      "urdf": [
+        -0.15,
+        0.0,
+        -0.045
+      ],
+      "isaac": [
+        -0.15,
+        0.0,
+        -0.045
+      ],
+      "same": true
+    },
+    {
+      "link": "caster",
+      "field": "collision_type",
+      "urdf": "sphere",
+      "isaac": "sphere",
+      "same": true
+    },
+    {
+      "link": "caster",
+      "field": "collision_dims",
+      "urdf": {
+        "radius": 0.03
+      },
+      "isaac": {
+        "radius": 0.03
+      },
+      "same": true
+    },
+    {
+      "link": "mast",
+      "field": "mass",
+      "urdf": 0.3,
+      "isaac": 0.3,
+      "same": true
+    },
+    {
+      "link": "mast",
+      "field": "inertia",
+      "urdf": [
+        0.00085,
+        0.00085,
+        6e-05
+      ],
+      "isaac": [
+        0.00085,
+        6e-05,
+        0.00085
+      ],
+      "same": false
+    },
+    {
+      "link": "mast",
+      "field": "origin",
+      "urdf": [
+        0.1,
+        0.0,
+        0.14
+      ],
+      "isaac": [
+        0.1,
+        0.0,
+        0.14
+      ],
+      "same": true
+    },
+    {
+      "link": "mast",
+      "field": "collision_type",
+      "urdf": "cylinder",
+      "isaac": "cylinder",
+      "same": true
+    },
+    {
+      "link": "mast",
+      "field": "collision_dims",
+      "urdf": {
+        "radius": 0.02,
+        "length": 0.18
+      },
+      "isaac": {
+        "radius": 0.02,
+        "length": 0.18
+      },
+      "same": true
+    },
+    {
+      "link": "lidar_link",
+      "field": "mass",
+      "urdf": 0.1,
+      "isaac": 0.1,
+      "same": true
+    },
+    {
+      "link": "lidar_link",
+      "field": "inertia",
+      "urdf": [
+        4.4e-05,
+        4.4e-05,
+        6.1e-05
+      ],
+      "isaac": [
+        4.4e-05,
+        4.4e-05,
+        6.1e-05
+      ],
+      "same": true
+    },
+    {
+      "link": "lidar_link",
+      "field": "origin",
+      "urdf": [
+        0.0,
+        0.0,
+        0.11
+      ],
+      "isaac": [
+        0.0,
+        0.0,
+        0.11
+      ],
+      "same": true
+    },
+    {
+      "link": "lidar_link",
+      "field": "collision_type",
+      "urdf": "cylinder",
+      "isaac": "cylinder",
+      "same": true
+    },
+    {
+      "link": "lidar_link",
+      "field": "collision_dims",
+      "urdf": {
+        "radius": 0.035,
+        "length": 0.04
+      },
+      "isaac": {
+        "radius": 0.035,
+        "length": 0.04
+      },
+      "same": true
+    },
+    {
+      "link": "camera_link",
+      "field": "mass",
+      "urdf": 0.08,
+      "isaac": 0.08,
+      "same": true
+    },
+    {
+      "link": "camera_link",
+      "field": "inertia",
+      "urdf": [
+        5.9e-05,
+        6e-06,
+        5.9e-05
+      ],
+      "isaac": [
+        5.8999996e-05,
+        6e-06,
+        5.8999993e-05
+      ],
+      "same": true
+    },
+    {
+      "link": "camera_link",
+      "field": "origin",
+      "urdf": [
+        0.03,
+        0.0,
+        0.04
+      ],
+      "isaac": [
+        0.03,
+        0.0,
+        0.04
+      ],
+      "same": true
+    },
+    {
+      "link": "camera_link",
+      "field": "collision_type",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "link": "camera_link",
+      "field": "collision_dims",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "link": "camera_optical_frame",
+      "field": "mass",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "link": "camera_optical_frame",
+      "field": "inertia",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "link": "camera_optical_frame",
+      "field": "origin",
+      "urdf": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "isaac": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same": true
+    },
+    {
+      "link": "camera_optical_frame",
+      "field": "collision_type",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "link": "camera_optical_frame",
+      "field": "collision_dims",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    }
+  ],
+  "n_compared": 45,
+  "n_diff": 1,
+  "joint_rows": [
+    {
+      "joint": "base_joint",
+      "field": "type",
+      "urdf": "fixed",
+      "isaac": "fixed",
+      "same": true
+    },
+    {
+      "joint": "base_joint",
+      "field": "effort",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "joint": "base_joint",
+      "field": "velocity",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "joint": "base_joint",
+      "field": "damping",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "joint": "left_wheel_joint",
+      "field": "type",
+      "urdf": "continuous",
+      "isaac": "continuous",
+      "same": true
+    },
+    {
+      "joint": "left_wheel_joint",
+      "field": "effort",
+      "urdf": 12.0,
+      "isaac": 12.0,
+      "same": true
+    },
+    {
+      "joint": "left_wheel_joint",
+      "field": "velocity",
+      "urdf": 8.0,
+      "isaac": 8.0,
+      "same": true
+    },
+    {
+      "joint": "left_wheel_joint",
+      "field": "damping",
+      "urdf": 0.01,
+      "isaac": 0.01,
+      "same": true
+    },
+    {
+      "joint": "right_wheel_joint",
+      "field": "type",
+      "urdf": "continuous",
+      "isaac": "continuous",
+      "same": true
+    },
+    {
+      "joint": "right_wheel_joint",
+      "field": "effort",
+      "urdf": 12.0,
+      "isaac": 12.0,
+      "same": true
+    },
+    {
+      "joint": "right_wheel_joint",
+      "field": "velocity",
+      "urdf": 8.0,
+      "isaac": 8.0,
+      "same": true
+    },
+    {
+      "joint": "right_wheel_joint",
+      "field": "damping",
+      "urdf": 0.01,
+      "isaac": 0.01,
+      "same": true
+    },
+    {
+      "joint": "caster_joint",
+      "field": "type",
+      "urdf": "fixed",
+      "isaac": "fixed",
+      "same": true
+    },
+    {
+      "joint": "caster_joint",
+      "field": "effort",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "joint": "caster_joint",
+      "field": "velocity",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "joint": "caster_joint",
+      "field": "damping",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "joint": "mast_joint",
+      "field": "type",
+      "urdf": "fixed",
+      "isaac": "fixed",
+      "same": true
+    },
+    {
+      "joint": "mast_joint",
+      "field": "effort",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "joint": "mast_joint",
+      "field": "velocity",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "joint": "mast_joint",
+      "field": "damping",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "joint": "lidar_joint",
+      "field": "type",
+      "urdf": "fixed",
+      "isaac": "fixed",
+      "same": true
+    },
+    {
+      "joint": "lidar_joint",
+      "field": "effort",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "joint": "lidar_joint",
+      "field": "velocity",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "joint": "lidar_joint",
+      "field": "damping",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "joint": "camera_joint",
+      "field": "type",
+      "urdf": "fixed",
+      "isaac": "fixed",
+      "same": true
+    },
+    {
+      "joint": "camera_joint",
+      "field": "effort",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "joint": "camera_joint",
+      "field": "velocity",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "joint": "camera_joint",
+      "field": "damping",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "joint": "camera_optical_joint",
+      "field": "type",
+      "urdf": "fixed",
+      "isaac": "fixed",
+      "same": true
+    },
+    {
+      "joint": "camera_optical_joint",
+      "field": "effort",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "joint": "camera_optical_joint",
+      "field": "velocity",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    },
+    {
+      "joint": "camera_optical_joint",
+      "field": "damping",
+      "urdf": null,
+      "isaac": null,
+      "same": true
+    }
+  ],
+  "n_joint_compared": 32,
+  "n_joint_diff": 0
+}

@@ -1,0 +1,38 @@
+{
+  "note": "PhysX angular drive damping is the velocity-tracking gain. The URDF's <dynamics damping='0.01'> is imported into it directly, and 0.01 is far too weak to hold a velocity target, so the spin under-rotates.",
+  "target_rad_s": 2.0,
+  "predicted_dyaw": 1.75,
+  "gazebo_dyaw": 1.857,
+  "rows": [
+    {
+      "damping": 0.01,
+      "joint_reached_rad_s": 1.207,
+      "dyaw_rad": 1.015
+    },
+    {
+      "damping": 0.03,
+      "joint_reached_rad_s": 1.789,
+      "dyaw_rad": 1.52
+    },
+    {
+      "damping": 0.1,
+      "joint_reached_rad_s": 1.943,
+      "dyaw_rad": 1.7
+    },
+    {
+      "damping": 0.3,
+      "joint_reached_rad_s": 1.377,
+      "dyaw_rad": 1.752
+    },
+    {
+      "damping": 1.0,
+      "joint_reached_rad_s": 1.991,
+      "dyaw_rad": 1.771
+    },
+    {
+      "damping": 100.0,
+      "joint_reached_rad_s": 2.006,
+      "dyaw_rad": 1.779
+    }
+  ]
+}

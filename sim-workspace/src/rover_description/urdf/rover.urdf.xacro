@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<!-- The migration source robot: a diff-drive rover with lidar and depth camera.
+     This project. Deliberately imperfect in FOUR ways, each of which
+     becomes a notes (see docs/CURRICULUM.md 1.4). The flaws are tagged
+     FLAW-1..FLAW-4 so check_flaws.py can prove they are all still present:
+     a "fixed" source robot would silently destroy other parts of this repo. -->
+<robot name="rover" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:property name="base_l"  value="0.40"/>
+  <xacro:property name="base_w"  value="0.28"/>
+  <xacro:property name="base_h"  value="0.10"/>
+  <xacro:property name="base_m"  value="6.0"/>
+  <xacro:property name="wheel_r" value="0.075"/>
+  <xacro:property name="wheel_w" value="0.04"/>
+  <xacro:property name="wheel_m" value="0.5"/>
+  <!-- Wheel separation: measured centre-to-centre. a later check verifies the
+       odometry against this number, so it must match the joint origins below. -->
+  <xacro:property name="track"   value="0.30"/>
+
+  <material name="grey">  <color rgba="0.35 0.37 0.40 1"/></material>
+  <material name="black"> <color rgba="0.08 0.08 0.09 1"/></material>
+  <material name="amber"> <color rgba="0.90 0.60 0.10 1"/></material>
+
+  <link name="base_footprint"/>
+
+  <joint name="base_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child  link="base_link"/>
+    <origin xyz="0 0 ${wheel_r}"/>
+  </joint>
+
+  <link name="base_link">
+    <visual>
+      <geometry><box size="${base_l} ${base_w} ${base_h}"/></geometry>
+      <material name="grey"/>
+    </visual>
+    <collision>
+      <geometry><box size="${base_l} ${base_w} ${base_h}"/></geometry>
+    </collision>
+    <inertial>
+      <mass value="${base_m}"/>
+      <!-- FLAW-1: plausible-but-wrong inertia. These are the numbers a box of
+           this size and mass would have IF it were a uniform solid, which this
+           robot is not (battery low and rear, mast high and forward). Gazebo's
+           solver is forgiving enough that the robot drives fine anyway; PhysX
+           is not. a later check measures the difference and derives the real
+           tensor on screen. Do NOT "fix" this here. -->
+      <inertia ixx="0.0446" ixy="0" ixz="0"
+               iyy="0.0850" iyz="0"
+               izz="0.1192"/>
+    </inertial>
+  </link>
+
+  <xacro:macro name="wheel" params="name y">
+    <link name="${name}_wheel">
+      <visual>
+        <origin rpy="1.5707963 0 0"/>
+        <geometry><cylinder radius="${wheel_r}" length="${wheel_w}"/></geometry>
+        <material name="black"/>
+      </visual>
+      <collision>
+        <origin rpy="1.5707963 0 0"/>
+        <geometry><cylinder radius="${wheel_r}" length="${wheel_w}"/></geometry>
+        <surface>
+          <friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction>
+        </surface>
+      </collision>
+      <inertial>
+        <mass value="${wheel_m}"/>
+        <origin rpy="1.5707963 0 0"/>
+        <inertia ixx="0.000769" ixy="0" ixz="0"
+                 iyy="0.000769" iyz="0"
+                 izz="0.001406"/>
+      </inertial>
+    </link>
+
+    <joint name="${name}_wheel_joint" type="continuous">
+      <parent link="base_link"/>
+      <child  link="${name}_wheel"/>
+      <!-- z=0 puts the axle at base_link origin, which sits at wheel_r above
+           the ground via base_joint. So the wheel bottom touches z=0 exactly. -->
+      <origin xyz="0 ${y} 0"/>
+      <axis   xyz="0 1 0"/>
+      <!-- A velocity limit BOTH engines enforce, contrary to what this comment
+           used to claim. 8 rad/s = 0.6 m/s at this radius, below the 0.8 m/s
+           controllers.yaml asks Nav2 for.
+
+           MEASURED 2026-08-21, commanding 0.8 m/s:
+             gazebo  8.000 rad/s = 0.600 m/s
+             isaac   7.981 rad/s = 0.599 m/s
+           They agree to within 1%. gz_ros2_control enforces the joint <limit>
+           exactly as PhysX does, and it is the <limit> rather than the
+           ros2_control command_interface bounds that clamps.
+
+           So this is a Nav2 configuration bug present since notes 1 in both
+           simulators, NOT something the migration exposes. a later check. -->
+      <limit effort="12.0" velocity="8.0"/>
+      <dynamics damping="0.01" friction="0.0"/>
+    </joint>
+  </xacro:macro>
+
+  <xacro:wheel name="left"  y="${ track/2}"/>
+  <xacro:wheel name="right" y="${-track/2}"/>
+
+  <!-- Rear caster. A sphere, so it cannot fight the diff-drive kinematics the
+       way a badly-modelled swivel wheel does. C3 S4 already taught why. -->
+  <link name="caster">
+    <visual>
+      <geometry><sphere radius="0.030"/></geometry>
+      <material name="black"/>
+    </visual>
+    <collision>
+      <geometry><sphere radius="0.030"/></geometry>
+      <surface>
+        <friction><ode><mu>0.05</mu><mu2>0.05</mu2></ode></friction>
+      </surface>
+    </collision>
+    <inertial>
+      <mass value="0.15"/>
+      <inertia ixx="5.4e-5" ixy="0" ixz="0" iyy="5.4e-5" iyz="0" izz="5.4e-5"/>
+    </inertial>
+  </link>
+  <joint name="caster_joint" type="fixed">
+    <parent link="base_link"/>
+    <child  link="caster"/>
+    <origin xyz="-0.15 0 ${-wheel_r + 0.030}"/>
+  </joint>
+
+  <!-- Sensor mast -->
+  <link name="mast">
+    <visual>
+      <geometry><cylinder radius="0.02" length="0.18"/></geometry>
+      <material name="amber"/>
+    </visual>
+    <collision><geometry><cylinder radius="0.02" length="0.18"/></geometry></collision>
+    <inertial>
+      <mass value="0.30"/>
+      <inertia ixx="8.5e-4" ixy="0" ixz="0" iyy="8.5e-4" iyz="0" izz="6.0e-5"/>
+    </inertial>
+  </link>
+  <joint name="mast_joint" type="fixed">
+    <parent link="base_link"/>
+    <child  link="mast"/>
+    <origin xyz="0.10 0 ${base_h/2 + 0.09}"/>
+  </joint>
+
+  <link name="lidar_link">
+    <!-- FLAW-5: the mesh path uses package://, which is a ROS convention.
+         Gazebo resolves it because it was launched from a sourced workspace
+         and inherits GZ_SIM_RESOURCE_PATH / the ament index. Isaac Sim, started
+         as its own application, has neither. The importer must be TOLD where
+         the package is (ros_package_paths) or the reference resolves to
+         nothing, and an unresolved mesh is not an error: it is a link that
+         silently has no visual. a later check.
+
+         The mesh is a 16-sided prism, not a cylinder, deliberately: the
+         collision below is still the analytic cylinder it replaced, so visual
+         and collision now DISAGREE by construction. That divergence is the
+         second half of 3.4, and the facet count is the setup for 3.7. -->
+    <visual>
+      <geometry>
+        <mesh filename="package://rover_description/meshes/lidar_housing.stl"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+    <collision>
+      <geometry><cylinder radius="0.035" length="0.04"/></geometry>
+    </collision>
+    <inertial>
+      <mass value="0.10"/>
+      <inertia ixx="4.4e-5" ixy="0" ixz="0" iyy="4.4e-5" iyz="0" izz="6.1e-5"/>
+    </inertial>
+  </link>
+  <joint name="lidar_joint" type="fixed">
+    <parent link="mast"/>
+    <child  link="lidar_link"/>
+    <origin xyz="0 0 0.11"/>
+  </joint>
+
+  <link name="camera_link">
+    <visual>
+      <geometry><box size="0.02 0.09 0.025"/></geometry>
+      <material name="black"/>
+    </visual>
+    <inertial>
+      <mass value="0.08"/>
+      <inertia ixx="5.9e-5" ixy="0" ixz="0" iyy="6.0e-6" iyz="0" izz="5.9e-5"/>
+    </inertial>
+  </link>
+  <joint name="camera_joint" type="fixed">
+    <parent link="mast"/>
+    <child  link="camera_link"/>
+    <origin xyz="0.03 0 0.04"/>
+  </joint>
+
+  <!-- The optical frame. REP-103: optical frames are z-forward, x-right,
+       y-down, rotated from the ROS body convention. Isaac's camera prim uses
+       a different convention again, and a later check measures what that does
+       to a point cloud. -->
+  <link name="camera_optical_frame"/>
+  <joint name="camera_optical_joint" type="fixed">
+    <parent link="camera_link"/>
+    <child  link="camera_optical_frame"/>
+    <origin rpy="${-pi/2} 0 ${-pi/2}"/>
+  </joint>
+
+  <!-- ================= ros2_control ================= -->
+  <ros2_control name="GzSystem" type="system">
+    <hardware>
+      <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+    </hardware>
+    <joint name="left_wheel_joint">
+      <command_interface name="velocity">
+        <param name="min">-8.0</param>
+        <param name="max"> 8.0</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="right_wheel_joint">
+      <command_interface name="velocity">
+        <param name="min">-8.0</param>
+        <param name="max"> 8.0</param>
+      </command_interface>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+
+  <gazebo>
+    <plugin filename="gz_ros2_control-system"
+            name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+      <parameters>$(find rover_description)/config/controllers.yaml</parameters>
+    </plugin>
+
+    <!-- "FLAW-3" WAS A PREDICTION AND THE ROS-SIDE HALF IS WRONG. This
+         comment used to claim the stack subscribes to /rover/battery and that a
+         node downstream gates motion on it. Measured 2026-08-22, four ways:
+         `grep battery` in gz.launch.py finds 0 bridge entries; `grep -rl
+         battery` across sim-workspace/src finds no files; there is no gating
+         node; and the 7.1 derived interface is 7 topics with no battery among
+         them. The PLUGIN is real and reaches the expanded URDF, but nothing on
+         the ROS side consumes it, so removing it breaks nothing. a later check
+         reports the refutation. Whether it publishes a gz-transport topic is
+         still open; see RUN.md 7.5. Sixth contradicted prediction. -->
+    <plugin filename="gz-sim-linearbatteryplugin-system"
+            name="gz::sim::systems::LinearBatteryPlugin">
+      <battery_name>rover_battery</battery_name>
+      <voltage>12.6</voltage>
+      <open_circuit_voltage_constant_coef>12.6</open_circuit_voltage_constant_coef>
+      <capacity>7.0</capacity>
+      <power_load>6.0</power_load>
+    </plugin>
+  </gazebo>
+
+  <gazebo reference="lidar_link">
+    <sensor name="lidar" type="gpu_lidar">
+      <topic>scan</topic>
+      <update_rate>10</update_rate>
+      <lidar>
+        <scan><horizontal><samples>640</samples>
+          <min_angle>-2.356</min_angle><max_angle>2.356</max_angle>
+        </horizontal></scan>
+        <range><min>0.12</min><max>12.0</max><resolution>0.01</resolution></range>
+        <noise><type>gaussian</type><mean>0.0</mean><stddev>0.01</stddev></noise>
+      </lidar>
+      <always_on>1</always_on>
+      <visualize>true</visualize>
+    </sensor>
+  </gazebo>
+
+  <gazebo reference="camera_link">
+    <!-- "FLAW-4" WAS A PREDICTION AND IT IS WRONG. This comment used to claim
+         that the 30 Hz camera against a 1000 Hz physics step reproduced a 0.33x
+         rate bug. Measured (scripts/sensor_probe_gz.py, 4 s sim window):
+         /scan achieves 10.00 Hz of 10 declared (1.000x) and /depth achieves
+         29.79 of 30 (0.993x). Gazebo schedules sensors independently of the
+         physics step and hits both targets. a later check reports the refutation
+         instead. The rate MISMATCH is real; the resulting bug is not. -->
+    <sensor name="depth_camera" type="depth_camera">
+      <topic>depth</topic>
+      <update_rate>30</update_rate>
+      <camera>
+        <horizontal_fov>1.0472</horizontal_fov>
+        <image><width>640</width><height>480</height><format>R_FLOAT32</format></image>
+        <clip><near>0.10</near><far>10.0</far></clip>
+      </camera>
+      <always_on>1</always_on>
+    </sensor>
+  </gazebo>
+
+  <gazebo reference="left_wheel">
+    <mu1>1.0</mu1><mu2>1.0</mu2>
+  </gazebo>
+  <gazebo reference="right_wheel">
+    <mu1>1.0</mu1><mu2>1.0</mu2>
+  </gazebo>
+  <gazebo reference="caster">
+    <mu1>0.05</mu1><mu2>0.05</mu2>
+  </gazebo>
+
+</robot>

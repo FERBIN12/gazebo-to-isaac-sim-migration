@@ -1,0 +1,55 @@
+{
+  "engine": "isaac-physx",
+  "physics_dt": 0.002,
+  "gazebo_max_step_size": 0.001,
+  "dt_ratio_vs_gazebo": 2.0,
+  "commanded_body_spin_rad_s": 1.0,
+  "secs": 2.0,
+  "rows": [
+    {
+      "damping": 0.01,
+      "applied": 0.01,
+      "reached_rad_s": 1.147,
+      "dyaw_rad": 0.883,
+      "gain_landed": true
+    },
+    {
+      "damping": 0.03,
+      "applied": 0.03,
+      "reached_rad_s": 1.752,
+      "dyaw_rad": 1.311,
+      "gain_landed": true
+    },
+    {
+      "damping": 0.1,
+      "applied": 0.1,
+      "reached_rad_s": 1.938,
+      "dyaw_rad": 1.472,
+      "gain_landed": true
+    },
+    {
+      "damping": 0.3,
+      "applied": 0.3,
+      "reached_rad_s": 2.003,
+      "dyaw_rad": 1.517,
+      "gain_landed": true
+    },
+    {
+      "damping": 1.0,
+      "applied": 1.0,
+      "reached_rad_s": 2.032,
+      "dyaw_rad": 1.534,
+      "gain_landed": true
+    },
+    {
+      "damping": 100.0,
+      "applied": 100.000003,
+      "reached_rad_s": 1.975,
+      "dyaw_rad": 1.541,
+      "gain_landed": true
+    }
+  ],
+  "reached_monotone": false,
+  "dyaw_monotone": true,
+  "all_gains_landed": true
+}

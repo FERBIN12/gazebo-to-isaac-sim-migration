@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>rover_description</name>
+  <version>0.1.0</version>
+  <description>The migration source robot for this project: a diff-drive rover with
+  lidar and depth camera, working in Gazebo Harmonic under ROS 2 Jazzy, with four
+  deliberate flaws that each become a migration notes.</description>
+  <maintainer email="franklinrichardjep.f@northeastern.edu">Ferbin</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>ros_gz_sim</exec_depend>
+  <exec_depend>ros_gz_bridge</exec_depend>
+  <exec_depend>gz_ros2_control</exec_depend>
+  <exec_depend>controller_manager</exec_depend>
+  <exec_depend>diff_drive_controller</exec_depend>
+  <exec_depend>joint_state_broadcaster</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

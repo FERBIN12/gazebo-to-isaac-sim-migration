@@ -1,0 +1,1893 @@
+{
+  "_reference": {
+    "perturbation": {
+      "damping": 1.0,
+      "r_scale": 1.0,
+      "yaw0": 0.0,
+      "facet": 0.0,
+      "clamp": null
+    },
+    "final_yaw": 1.546209,
+    "repeat_noise": 0.0
+  },
+  "offset": {
+    "perturbation": {
+      "damping": 1.0,
+      "r_scale": 1.0,
+      "yaw0": 0.12,
+      "facet": 0.0,
+      "clamp": null
+    },
+    "final_error": 0.12,
+    "max_abs_error": 0.12,
+    "final_rate_error": 0.0,
+    "max_abs_rate_error": 0.0,
+    "read_in": "yaw",
+    "series": [
+      {
+        "t": 0.005,
+        "isaac": 0.120029,
+        "reference": 2.9e-05,
+        "error": 0.12,
+        "isaac_rate": 0.009315,
+        "reference_rate": 0.009315,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.055,
+        "isaac": 0.121831,
+        "reference": 0.001831,
+        "error": 0.12,
+        "isaac_rate": 0.174497,
+        "reference_rate": 0.174497,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.105,
+        "isaac": 0.12784,
+        "reference": 0.00784,
+        "error": 0.12,
+        "isaac_rate": 0.381901,
+        "reference_rate": 0.381901,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.155,
+        "isaac": 0.138244,
+        "reference": 0.018244,
+        "error": 0.12,
+        "isaac_rate": 0.58683,
+        "reference_rate": 0.58683,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.205,
+        "isaac": 0.154154,
+        "reference": 0.034154,
+        "error": 0.12,
+        "isaac_rate": 0.821785,
+        "reference_rate": 0.821785,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.255,
+        "isaac": 0.173991,
+        "reference": 0.053991,
+        "error": 0.12,
+        "isaac_rate": 1.000033,
+        "reference_rate": 1.000033,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.305,
+        "isaac": 0.198505,
+        "reference": 0.078505,
+        "error": 0.12,
+        "isaac_rate": 1.204249,
+        "reference_rate": 1.204249,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.355,
+        "isaac": 0.226837,
+        "reference": 0.106837,
+        "error": 0.12,
+        "isaac_rate": 1.417898,
+        "reference_rate": 1.417898,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.405,
+        "isaac": 0.260024,
+        "reference": 0.140024,
+        "error": 0.12,
+        "isaac_rate": 1.609121,
+        "reference_rate": 1.609121,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.455,
+        "isaac": 0.297872,
+        "reference": 0.177872,
+        "error": 0.12,
+        "isaac_rate": 1.817777,
+        "reference_rate": 1.817777,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.505,
+        "isaac": 0.340253,
+        "reference": 0.220253,
+        "error": 0.12,
+        "isaac_rate": 1.99665,
+        "reference_rate": 1.99665,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.555,
+        "isaac": 0.384645,
+        "reference": 0.264645,
+        "error": 0.12,
+        "isaac_rate": 1.996641,
+        "reference_rate": 1.996641,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.605,
+        "isaac": 0.429182,
+        "reference": 0.309182,
+        "error": 0.12,
+        "isaac_rate": 2.001081,
+        "reference_rate": 2.001081,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.655,
+        "isaac": 0.473625,
+        "reference": 0.353625,
+        "error": 0.12,
+        "isaac_rate": 1.998028,
+        "reference_rate": 1.998028,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.705,
+        "isaac": 0.518068,
+        "reference": 0.398068,
+        "error": 0.12,
+        "isaac_rate": 1.996475,
+        "reference_rate": 1.996475,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.755,
+        "isaac": 0.56234,
+        "reference": 0.44234,
+        "error": 0.12,
+        "isaac_rate": 2.007517,
+        "reference_rate": 2.007517,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.805,
+        "isaac": 0.606718,
+        "reference": 0.486718,
+        "error": 0.12,
+        "isaac_rate": 1.989019,
+        "reference_rate": 1.989019,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.855,
+        "isaac": 0.65111,
+        "reference": 0.53111,
+        "error": 0.12,
+        "isaac_rate": 1.999771,
+        "reference_rate": 1.999771,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.905,
+        "isaac": 0.695478,
+        "reference": 0.575478,
+        "error": 0.12,
+        "isaac_rate": 2.002098,
+        "reference_rate": 2.002098,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.955,
+        "isaac": 0.739828,
+        "reference": 0.619828,
+        "error": 0.12,
+        "isaac_rate": 1.998446,
+        "reference_rate": 1.998446,
+        "rate_error": 0.0
+      },
+      {
+        "t": 1.005,
+        "isaac": 0.784173,
+        "reference": 0.664173,
+        "error": 0.12,
+        "isaac_rate": 2.000826,
+        "reference_rate": 2.000826,
+        "rate_error": 0.0
+      },
+      {
+        "t": 1.055,
+        "isaac": 0.82851,
+        "reference": 0.70851,
+        "error": 0.12,
+        "isaac_rate": 1.997069,
+        "reference_rate": 1.997069,
+        "rate_error": 0.0
+      },
+      {
+        "t": 1.105,
+        "isaac": 0.872695,
+        "reference": 0.752695,
+        "error": 0.12,
+        "isaac_rate": 1.996528,
+        "reference_rate": 1.996528,
+        "rate_error": 0.0
+      },
+      {
+        "t": 1.155,
+        "isaac": 0.916897,
+        "reference": 0.796897,
+        "error": 0.12,
+        "isaac_rate": 1.997766,
+        "reference_rate": 1.997766,
+        "rate_error": 0.0
+      },
+      {
+        "t": 1.205,
+        "isaac": 0.96109,
+        "reference": 0.84109,
+        "error": 0.12,
+        "isaac_rate": 2.001935,
+        "reference_rate": 2.001935,
+        "rate_error": 0.0
+      },
+      {
+        "t": 1.255,
+        "isaac": 1.005305,
+        "reference": 0.885305,
+        "error": 0.12,
+        "isaac_rate": 1.999215,
+        "reference_rate": 1.999215,
+        "rate_error": 0.0
+      },
+      {
+        "t": 1.305,
+        "isaac": 1.049511,
+        "reference": 0.929511,
+        "error": 0.12,
+        "isaac_rate": 1.990412,
+        "reference_rate": 1.990412,
+        "rate_error": 0.0
+      },
+      {
+        "t": 1.355,
+        "isaac": 1.093558,
+        "reference": 0.973558,
+        "error": 0.12,
+        "isaac_rate": 1.984295,
+        "reference_rate": 1.984295,
+        "rate_error": 0.0
+      },
+      {
+        "t": 1.405,
+        "isaac": 1.137512,
+        "reference": 1.017512,
+        "error": 0.12,
+        "isaac_rate": 1.992158,
+        "reference_rate": 1.992158,
+        "rate_error": 0.0
+      },
+      {
+        "t": 1.455,
+        "isaac": 1.181865,
+        "reference": 1.061865,
+        "error": 0.12,
+        "isaac_rate": 1.989216,
+        "reference_rate": 1.989216,
+        "rate_error": 0.0
+      },
+      {
+        "t": 1.505,
+        "isaac": 1.22623,
+        "reference": 1.10623,
+        "error": 0.12,
+        "isaac_rate": 2.000039,
+        "reference_rate": 2.000039,
+        "rate_error": 0.0
+      },
+      {
+        "t": 1.555,
+        "isaac": 1.270586,
+        "reference": 1.150586,
+        "error": 0.12,
+        "isaac_rate": 1.994027,
+        "reference_rate": 1.994027,
+        "rate_error": 0.0
+      },
+      {
+        "t": 1.605,
+        "isaac": 1.314982,
+        "reference": 1.194982,
+        "error": 0.12,
+        "isaac_rate": 1.992828,
+        "reference_rate": 1.992828,
+        "rate_error": 0.0
+      },
+      {
+        "t": 1.655,
+        "isaac": 1.359385,
+        "reference": 1.239385,
+        "error": 0.12,
+        "isaac_rate": 2.002411,
+        "reference_rate": 2.002411,
+        "rate_error": 0.0
+      },
+      {
+        "t": 1.705,
+        "isaac": 1.403806,
+        "reference": 1.283806,
+        "error": 0.12,
+        "isaac_rate": 2.001653,
+        "reference_rate": 2.001653,
+        "rate_error": 0.0
+      },
+      {
+        "t": 1.755,
+        "isaac": 1.448224,
+        "reference": 1.328224,
+        "error": 0.12,
+        "isaac_rate": 1.991882,
+        "reference_rate": 1.991882,
+        "rate_error": 0.0
+      },
+      {
+        "t": 1.805,
+        "isaac": 1.492583,
+        "reference": 1.372583,
+        "error": 0.12,
+        "isaac_rate": 1.990124,
+        "reference_rate": 1.990124,
+        "rate_error": 0.0
+      },
+      {
+        "t": 1.855,
+        "isaac": 1.537026,
+        "reference": 1.417026,
+        "error": 0.12,
+        "isaac_rate": 1.998951,
+        "reference_rate": 1.998951,
+        "rate_error": 0.0
+      },
+      {
+        "t": 1.905,
+        "isaac": 1.581475,
+        "reference": 1.461475,
+        "error": 0.12,
+        "isaac_rate": 2.002723,
+        "reference_rate": 2.002723,
+        "rate_error": 0.0
+      },
+      {
+        "t": 1.955,
+        "isaac": 1.626089,
+        "reference": 1.506089,
+        "error": 0.12,
+        "isaac_rate": 1.997931,
+        "reference_rate": 1.997931,
+        "rate_error": 0.0
+      }
+    ]
+  },
+  "ramp": {
+    "perturbation": {
+      "damping": 1.0,
+      "r_scale": 0.92,
+      "yaw0": 0.0,
+      "facet": 0.0,
+      "clamp": null
+    },
+    "final_error": 0.145843,
+    "max_abs_error": 0.145843,
+    "final_rate_error": 0.140258,
+    "max_abs_rate_error": 0.959276,
+    "read_in": "yaw",
+    "series": [
+      {
+        "t": 0.005,
+        "isaac": 3e-05,
+        "reference": 2.9e-05,
+        "error": 1e-06,
+        "isaac_rate": 0.017671,
+        "reference_rate": 0.009315,
+        "rate_error": 0.008356
+      },
+      {
+        "t": 0.055,
+        "isaac": 0.001796,
+        "reference": 0.001831,
+        "error": -3.5e-05,
+        "isaac_rate": 0.216736,
+        "reference_rate": 0.174497,
+        "rate_error": 0.042239
+      },
+      {
+        "t": 0.105,
+        "isaac": 0.008406,
+        "reference": 0.00784,
+        "error": 0.000566,
+        "isaac_rate": 0.415761,
+        "reference_rate": 0.381901,
+        "rate_error": 0.033859
+      },
+      {
+        "t": 0.155,
+        "isaac": 0.01987,
+        "reference": 0.018244,
+        "error": 0.001626,
+        "isaac_rate": 0.637933,
+        "reference_rate": 0.58683,
+        "rate_error": 0.051103
+      },
+      {
+        "t": 0.205,
+        "isaac": 0.036155,
+        "reference": 0.034154,
+        "error": 0.002001,
+        "isaac_rate": 0.858238,
+        "reference_rate": 0.821785,
+        "rate_error": 0.036453
+      },
+      {
+        "t": 0.255,
+        "isaac": 0.057502,
+        "reference": 0.053991,
+        "error": 0.003511,
+        "isaac_rate": 1.08321,
+        "reference_rate": 1.000033,
+        "rate_error": 0.083177
+      },
+      {
+        "t": 0.305,
+        "isaac": 0.083719,
+        "reference": 0.078505,
+        "error": 0.005214,
+        "isaac_rate": 1.310979,
+        "reference_rate": 1.204249,
+        "rate_error": 0.106731
+      },
+      {
+        "t": 0.355,
+        "isaac": 0.114731,
+        "reference": 0.106837,
+        "error": 0.007894,
+        "isaac_rate": 1.540159,
+        "reference_rate": 1.417898,
+        "rate_error": 0.122261
+      },
+      {
+        "t": 0.405,
+        "isaac": 0.150839,
+        "reference": 0.140024,
+        "error": 0.010815,
+        "isaac_rate": 1.753751,
+        "reference_rate": 1.609121,
+        "rate_error": 0.14463
+      },
+      {
+        "t": 0.455,
+        "isaac": 0.192211,
+        "reference": 0.177872,
+        "error": 0.014339,
+        "isaac_rate": 1.988241,
+        "reference_rate": 1.817777,
+        "rate_error": 0.170463
+      },
+      {
+        "t": 0.505,
+        "isaac": 0.238525,
+        "reference": 0.220253,
+        "error": 0.018272,
+        "isaac_rate": 2.186193,
+        "reference_rate": 1.99665,
+        "rate_error": 0.189543
+      },
+      {
+        "t": 0.555,
+        "isaac": 0.287057,
+        "reference": 0.264645,
+        "error": 0.022412,
+        "isaac_rate": 2.190111,
+        "reference_rate": 1.996641,
+        "rate_error": 0.19347
+      },
+      {
+        "t": 0.605,
+        "isaac": 0.335693,
+        "reference": 0.309182,
+        "error": 0.026512,
+        "isaac_rate": 2.189543,
+        "reference_rate": 2.001081,
+        "rate_error": 0.188462
+      },
+      {
+        "t": 0.655,
+        "isaac": 0.384188,
+        "reference": 0.353625,
+        "error": 0.030563,
+        "isaac_rate": 2.181874,
+        "reference_rate": 1.998028,
+        "rate_error": 0.183846
+      },
+      {
+        "t": 0.705,
+        "isaac": 0.432774,
+        "reference": 0.398068,
+        "error": 0.034706,
+        "isaac_rate": 2.173229,
+        "reference_rate": 1.996475,
+        "rate_error": 0.176755
+      },
+      {
+        "t": 0.755,
+        "isaac": 0.481327,
+        "reference": 0.44234,
+        "error": 0.038987,
+        "isaac_rate": 2.171891,
+        "reference_rate": 2.007517,
+        "rate_error": 0.164375
+      },
+      {
+        "t": 0.805,
+        "isaac": 0.529735,
+        "reference": 0.486718,
+        "error": 0.043016,
+        "isaac_rate": 2.169829,
+        "reference_rate": 1.989019,
+        "rate_error": 0.18081
+      },
+      {
+        "t": 0.855,
+        "isaac": 0.578106,
+        "reference": 0.53111,
+        "error": 0.046996,
+        "isaac_rate": 2.166158,
+        "reference_rate": 1.999771,
+        "rate_error": 0.166387
+      },
+      {
+        "t": 0.905,
+        "isaac": 0.626453,
+        "reference": 0.575478,
+        "error": 0.050975,
+        "isaac_rate": 2.169454,
+        "reference_rate": 2.002098,
+        "rate_error": 0.167356
+      },
+      {
+        "t": 0.955,
+        "isaac": 0.674785,
+        "reference": 0.619828,
+        "error": 0.054956,
+        "isaac_rate": 2.162791,
+        "reference_rate": 1.998446,
+        "rate_error": 0.164345
+      },
+      {
+        "t": 1.005,
+        "isaac": 0.723162,
+        "reference": 0.664173,
+        "error": 0.058989,
+        "isaac_rate": 2.17348,
+        "reference_rate": 2.000826,
+        "rate_error": 0.172653
+      },
+      {
+        "t": 1.055,
+        "isaac": 0.771576,
+        "reference": 0.70851,
+        "error": 0.063067,
+        "isaac_rate": 2.183902,
+        "reference_rate": 1.997069,
+        "rate_error": 0.186833
+      },
+      {
+        "t": 1.105,
+        "isaac": 0.819911,
+        "reference": 0.752695,
+        "error": 0.067216,
+        "isaac_rate": 2.170491,
+        "reference_rate": 1.996528,
+        "rate_error": 0.173964
+      },
+      {
+        "t": 1.155,
+        "isaac": 0.868251,
+        "reference": 0.796897,
+        "error": 0.071354,
+        "isaac_rate": 2.169379,
+        "reference_rate": 1.997766,
+        "rate_error": 0.171612
+      },
+      {
+        "t": 1.205,
+        "isaac": 0.916573,
+        "reference": 0.84109,
+        "error": 0.075483,
+        "isaac_rate": 2.17139,
+        "reference_rate": 2.001935,
+        "rate_error": 0.169455
+      },
+      {
+        "t": 1.255,
+        "isaac": 0.964903,
+        "reference": 0.885305,
+        "error": 0.079598,
+        "isaac_rate": 2.164093,
+        "reference_rate": 1.999215,
+        "rate_error": 0.164878
+      },
+      {
+        "t": 1.305,
+        "isaac": 1.013241,
+        "reference": 0.929511,
+        "error": 0.08373,
+        "isaac_rate": 2.170671,
+        "reference_rate": 1.990412,
+        "rate_error": 0.18026
+      },
+      {
+        "t": 1.355,
+        "isaac": 1.061592,
+        "reference": 0.973558,
+        "error": 0.088034,
+        "isaac_rate": 2.166365,
+        "reference_rate": 1.984295,
+        "rate_error": 0.18207
+      },
+      {
+        "t": 1.405,
+        "isaac": 1.110256,
+        "reference": 1.017512,
+        "error": 0.092744,
+        "isaac_rate": 2.187405,
+        "reference_rate": 1.992158,
+        "rate_error": 0.195247
+      },
+      {
+        "t": 1.455,
+        "isaac": 1.160559,
+        "reference": 1.061865,
+        "error": 0.098694,
+        "isaac_rate": 2.199304,
+        "reference_rate": 1.989216,
+        "rate_error": 0.210088
+      },
+      {
+        "t": 1.505,
+        "isaac": 1.21017,
+        "reference": 1.10623,
+        "error": 0.10394,
+        "isaac_rate": 2.170938,
+        "reference_rate": 2.000039,
+        "rate_error": 0.170898
+      },
+      {
+        "t": 1.555,
+        "isaac": 1.258736,
+        "reference": 1.150586,
+        "error": 0.108149,
+        "isaac_rate": 2.168859,
+        "reference_rate": 1.994027,
+        "rate_error": 0.174832
+      },
+      {
+        "t": 1.605,
+        "isaac": 1.307306,
+        "reference": 1.194982,
+        "error": 0.112324,
+        "isaac_rate": 2.168111,
+        "reference_rate": 1.992828,
+        "rate_error": 0.175283
+      },
+      {
+        "t": 1.655,
+        "isaac": 1.355982,
+        "reference": 1.239385,
+        "error": 0.116596,
+        "isaac_rate": 2.179852,
+        "reference_rate": 2.002411,
+        "rate_error": 0.177441
+      },
+      {
+        "t": 1.705,
+        "isaac": 1.404599,
+        "reference": 1.283806,
+        "error": 0.120793,
+        "isaac_rate": 2.172188,
+        "reference_rate": 2.001653,
+        "rate_error": 0.170534
+      },
+      {
+        "t": 1.755,
+        "isaac": 1.453258,
+        "reference": 1.328224,
+        "error": 0.125034,
+        "isaac_rate": 2.179393,
+        "reference_rate": 1.991882,
+        "rate_error": 0.187511
+      },
+      {
+        "t": 1.805,
+        "isaac": 1.502124,
+        "reference": 1.372583,
+        "error": 0.129541,
+        "isaac_rate": 2.190664,
+        "reference_rate": 1.990124,
+        "rate_error": 0.20054
+      },
+      {
+        "t": 1.855,
+        "isaac": 1.550798,
+        "reference": 1.417026,
+        "error": 0.133772,
+        "isaac_rate": 2.191353,
+        "reference_rate": 1.998951,
+        "rate_error": 0.192403
+      },
+      {
+        "t": 1.905,
+        "isaac": 1.599061,
+        "reference": 1.461475,
+        "error": 0.137586,
+        "isaac_rate": 2.048896,
+        "reference_rate": 2.002723,
+        "rate_error": 0.046173
+      },
+      {
+        "t": 1.955,
+        "isaac": 1.647751,
+        "reference": 1.506089,
+        "error": 0.141662,
+        "isaac_rate": 2.12126,
+        "reference_rate": 1.997931,
+        "rate_error": 0.123329
+      }
+    ]
+  },
+  "saturating": {
+    "perturbation": {
+      "damping": 0.01,
+      "r_scale": 1.0,
+      "yaw0": 0.0,
+      "facet": 0.0,
+      "clamp": null
+    },
+    "final_error": -0.707878,
+    "max_abs_error": 0.707878,
+    "final_rate_error": -0.845061,
+    "max_abs_rate_error": 1.54508,
+    "read_in": "rate",
+    "series": [
+      {
+        "t": 0.005,
+        "isaac": 2.6e-05,
+        "reference": 2.9e-05,
+        "error": -3e-06,
+        "isaac_rate": -0.000799,
+        "reference_rate": 0.009315,
+        "rate_error": -0.010114
+      },
+      {
+        "t": 0.055,
+        "isaac": 2.8e-05,
+        "reference": 0.001831,
+        "error": -0.001803,
+        "isaac_rate": -0.003845,
+        "reference_rate": 0.174497,
+        "rate_error": -0.178342
+      },
+      {
+        "t": 0.105,
+        "isaac": 2.6e-05,
+        "reference": 0.00784,
+        "error": -0.007813,
+        "isaac_rate": 0.003054,
+        "reference_rate": 0.381901,
+        "rate_error": -0.378847
+      },
+      {
+        "t": 0.155,
+        "isaac": 0.000147,
+        "reference": 0.018244,
+        "error": -0.018097,
+        "isaac_rate": 0.021941,
+        "reference_rate": 0.58683,
+        "rate_error": -0.564889
+      },
+      {
+        "t": 0.205,
+        "isaac": 0.000949,
+        "reference": 0.034154,
+        "error": -0.033205,
+        "isaac_rate": 0.123549,
+        "reference_rate": 0.821785,
+        "rate_error": -0.698236
+      },
+      {
+        "t": 0.255,
+        "isaac": 0.003213,
+        "reference": 0.053991,
+        "error": -0.050778,
+        "isaac_rate": 0.220091,
+        "reference_rate": 1.000033,
+        "rate_error": -0.779942
+      },
+      {
+        "t": 0.305,
+        "isaac": 0.008043,
+        "reference": 0.078505,
+        "error": -0.070462,
+        "isaac_rate": 0.345452,
+        "reference_rate": 1.204249,
+        "rate_error": -0.858797
+      },
+      {
+        "t": 0.355,
+        "isaac": 0.01586,
+        "reference": 0.106837,
+        "error": -0.090977,
+        "isaac_rate": 0.547288,
+        "reference_rate": 1.417898,
+        "rate_error": -0.87061
+      },
+      {
+        "t": 0.405,
+        "isaac": 0.028623,
+        "reference": 0.140024,
+        "error": -0.111401,
+        "isaac_rate": 0.775448,
+        "reference_rate": 1.609121,
+        "rate_error": -0.833674
+      },
+      {
+        "t": 0.455,
+        "isaac": 0.046484,
+        "reference": 0.177872,
+        "error": -0.131388,
+        "isaac_rate": 0.950353,
+        "reference_rate": 1.817777,
+        "rate_error": -0.867424
+      },
+      {
+        "t": 0.505,
+        "isaac": 0.068514,
+        "reference": 0.220253,
+        "error": -0.15174,
+        "isaac_rate": 1.227099,
+        "reference_rate": 1.99665,
+        "rate_error": -0.769551
+      },
+      {
+        "t": 0.555,
+        "isaac": 0.095267,
+        "reference": 0.264645,
+        "error": -0.169378,
+        "isaac_rate": 1.20395,
+        "reference_rate": 1.996641,
+        "rate_error": -0.792691
+      },
+      {
+        "t": 0.605,
+        "isaac": 0.121977,
+        "reference": 0.309182,
+        "error": -0.187205,
+        "isaac_rate": 1.275798,
+        "reference_rate": 2.001081,
+        "rate_error": -0.725283
+      },
+      {
+        "t": 0.655,
+        "isaac": 0.148116,
+        "reference": 0.353625,
+        "error": -0.205508,
+        "isaac_rate": 1.184489,
+        "reference_rate": 1.998028,
+        "rate_error": -0.813539
+      },
+      {
+        "t": 0.705,
+        "isaac": 0.17572,
+        "reference": 0.398068,
+        "error": -0.222348,
+        "isaac_rate": 1.239962,
+        "reference_rate": 1.996475,
+        "rate_error": -0.756513
+      },
+      {
+        "t": 0.755,
+        "isaac": 0.203258,
+        "reference": 0.44234,
+        "error": -0.239082,
+        "isaac_rate": 1.314626,
+        "reference_rate": 2.007517,
+        "rate_error": -0.69289
+      },
+      {
+        "t": 0.805,
+        "isaac": 0.229776,
+        "reference": 0.486718,
+        "error": -0.256942,
+        "isaac_rate": 1.181144,
+        "reference_rate": 1.989019,
+        "rate_error": -0.807875
+      },
+      {
+        "t": 0.855,
+        "isaac": 0.256697,
+        "reference": 0.53111,
+        "error": -0.274413,
+        "isaac_rate": 1.172122,
+        "reference_rate": 1.999771,
+        "rate_error": -0.827649
+      },
+      {
+        "t": 0.905,
+        "isaac": 0.282505,
+        "reference": 0.575478,
+        "error": -0.292973,
+        "isaac_rate": 1.266931,
+        "reference_rate": 2.002098,
+        "rate_error": -0.735166
+      },
+      {
+        "t": 0.955,
+        "isaac": 0.308659,
+        "reference": 0.619828,
+        "error": -0.31117,
+        "isaac_rate": 1.142664,
+        "reference_rate": 1.998446,
+        "rate_error": -0.855782
+      },
+      {
+        "t": 1.005,
+        "isaac": 0.335038,
+        "reference": 0.664173,
+        "error": -0.329136,
+        "isaac_rate": 1.217502,
+        "reference_rate": 2.000826,
+        "rate_error": -0.783324
+      },
+      {
+        "t": 1.055,
+        "isaac": 0.360575,
+        "reference": 0.70851,
+        "error": -0.347935,
+        "isaac_rate": 1.212003,
+        "reference_rate": 1.997069,
+        "rate_error": -0.785066
+      },
+      {
+        "t": 1.105,
+        "isaac": 0.387068,
+        "reference": 0.752695,
+        "error": -0.365628,
+        "isaac_rate": 1.159759,
+        "reference_rate": 1.996528,
+        "rate_error": -0.836769
+      },
+      {
+        "t": 1.155,
+        "isaac": 0.413046,
+        "reference": 0.796897,
+        "error": -0.383851,
+        "isaac_rate": 1.219405,
+        "reference_rate": 1.997766,
+        "rate_error": -0.778361
+      },
+      {
+        "t": 1.205,
+        "isaac": 0.438424,
+        "reference": 0.84109,
+        "error": -0.402666,
+        "isaac_rate": 1.125128,
+        "reference_rate": 2.001935,
+        "rate_error": -0.876807
+      },
+      {
+        "t": 1.255,
+        "isaac": 0.464303,
+        "reference": 0.885305,
+        "error": -0.421001,
+        "isaac_rate": 1.164571,
+        "reference_rate": 1.999215,
+        "rate_error": -0.834644
+      },
+      {
+        "t": 1.305,
+        "isaac": 0.48943,
+        "reference": 0.929511,
+        "error": -0.440081,
+        "isaac_rate": 1.226655,
+        "reference_rate": 1.990412,
+        "rate_error": -0.763757
+      },
+      {
+        "t": 1.355,
+        "isaac": 0.514962,
+        "reference": 0.973558,
+        "error": -0.458596,
+        "isaac_rate": 1.10465,
+        "reference_rate": 1.984295,
+        "rate_error": -0.879644
+      },
+      {
+        "t": 1.405,
+        "isaac": 0.540489,
+        "reference": 1.017512,
+        "error": -0.477023,
+        "isaac_rate": 1.171416,
+        "reference_rate": 1.992158,
+        "rate_error": -0.820742
+      },
+      {
+        "t": 1.455,
+        "isaac": 0.565161,
+        "reference": 1.061865,
+        "error": -0.496704,
+        "isaac_rate": 1.160985,
+        "reference_rate": 1.989216,
+        "rate_error": -0.828231
+      },
+      {
+        "t": 1.505,
+        "isaac": 0.59088,
+        "reference": 1.10623,
+        "error": -0.51535,
+        "isaac_rate": 1.152851,
+        "reference_rate": 2.000039,
+        "rate_error": -0.847188
+      },
+      {
+        "t": 1.555,
+        "isaac": 0.615777,
+        "reference": 1.150586,
+        "error": -0.53481,
+        "isaac_rate": 1.196555,
+        "reference_rate": 1.994027,
+        "rate_error": -0.797473
+      },
+      {
+        "t": 1.605,
+        "isaac": 0.640386,
+        "reference": 1.194982,
+        "error": -0.554595,
+        "isaac_rate": 1.101768,
+        "reference_rate": 1.992828,
+        "rate_error": -0.891061
+      },
+      {
+        "t": 1.655,
+        "isaac": 0.665753,
+        "reference": 1.239385,
+        "error": -0.573632,
+        "isaac_rate": 1.161041,
+        "reference_rate": 2.002411,
+        "rate_error": -0.84137
+      },
+      {
+        "t": 1.705,
+        "isaac": 0.690127,
+        "reference": 1.283806,
+        "error": -0.593679,
+        "isaac_rate": 1.149771,
+        "reference_rate": 2.001653,
+        "rate_error": -0.851883
+      },
+      {
+        "t": 1.755,
+        "isaac": 0.71582,
+        "reference": 1.328224,
+        "error": -0.612404,
+        "isaac_rate": 1.182337,
+        "reference_rate": 1.991882,
+        "rate_error": -0.809545
+      },
+      {
+        "t": 1.805,
+        "isaac": 0.740717,
+        "reference": 1.372583,
+        "error": -0.631866,
+        "isaac_rate": 1.214621,
+        "reference_rate": 1.990124,
+        "rate_error": -0.775503
+      },
+      {
+        "t": 1.855,
+        "isaac": 0.765401,
+        "reference": 1.417026,
+        "error": -0.651625,
+        "isaac_rate": 1.128265,
+        "reference_rate": 1.998951,
+        "rate_error": -0.870686
+      },
+      {
+        "t": 1.905,
+        "isaac": 0.79082,
+        "reference": 1.461475,
+        "error": -0.670655,
+        "isaac_rate": 1.187736,
+        "reference_rate": 2.002723,
+        "rate_error": -0.814987
+      },
+      {
+        "t": 1.955,
+        "isaac": 0.815214,
+        "reference": 1.506089,
+        "error": -0.690875,
+        "isaac_rate": 1.167054,
+        "reference_rate": 1.997931,
+        "rate_error": -0.830878
+      }
+    ]
+  },
+  "periodic": {
+    "perturbation": {
+      "damping": 1.0,
+      "r_scale": 1.0,
+      "yaw0": 0.0,
+      "facet": 1.0,
+      "clamp": null
+    },
+    "final_error": 0.009101,
+    "max_abs_error": 0.018267,
+    "final_rate_error": 0.287425,
+    "max_abs_rate_error": 0.928113,
+    "read_in": "yaw",
+    "series": [
+      {
+        "t": 0.005,
+        "isaac": 2.9e-05,
+        "reference": 2.9e-05,
+        "error": -0.0,
+        "isaac_rate": 0.009221,
+        "reference_rate": 0.009315,
+        "rate_error": -9.4e-05
+      },
+      {
+        "t": 0.055,
+        "isaac": 0.00173,
+        "reference": 0.001831,
+        "error": -0.0001,
+        "isaac_rate": 0.166475,
+        "reference_rate": 0.174497,
+        "rate_error": -0.008022
+      },
+      {
+        "t": 0.105,
+        "isaac": 0.007495,
+        "reference": 0.00784,
+        "error": -0.000345,
+        "isaac_rate": 0.356542,
+        "reference_rate": 0.381901,
+        "rate_error": -0.025359
+      },
+      {
+        "t": 0.155,
+        "isaac": 0.017326,
+        "reference": 0.018244,
+        "error": -0.000918,
+        "isaac_rate": 0.556035,
+        "reference_rate": 0.58683,
+        "rate_error": -0.030795
+      },
+      {
+        "t": 0.205,
+        "isaac": 0.030846,
+        "reference": 0.034154,
+        "error": -0.003308,
+        "isaac_rate": 0.729176,
+        "reference_rate": 0.821785,
+        "rate_error": -0.092609
+      },
+      {
+        "t": 0.255,
+        "isaac": 0.048016,
+        "reference": 0.053991,
+        "error": -0.005976,
+        "isaac_rate": 0.81395,
+        "reference_rate": 1.000033,
+        "rate_error": -0.186083
+      },
+      {
+        "t": 0.305,
+        "isaac": 0.069139,
+        "reference": 0.078505,
+        "error": -0.009366,
+        "isaac_rate": 1.106119,
+        "reference_rate": 1.204249,
+        "rate_error": -0.09813
+      },
+      {
+        "t": 0.355,
+        "isaac": 0.095826,
+        "reference": 0.106837,
+        "error": -0.011012,
+        "isaac_rate": 1.37189,
+        "reference_rate": 1.417898,
+        "rate_error": -0.046008
+      },
+      {
+        "t": 0.405,
+        "isaac": 0.130544,
+        "reference": 0.140024,
+        "error": -0.00948,
+        "isaac_rate": 1.802032,
+        "reference_rate": 1.609121,
+        "rate_error": 0.192911
+      },
+      {
+        "t": 0.455,
+        "isaac": 0.17418,
+        "reference": 0.177872,
+        "error": -0.003692,
+        "isaac_rate": 2.100989,
+        "reference_rate": 1.817777,
+        "rate_error": 0.283211
+      },
+      {
+        "t": 0.505,
+        "isaac": 0.221406,
+        "reference": 0.220253,
+        "error": 0.001153,
+        "isaac_rate": 2.07094,
+        "reference_rate": 1.99665,
+        "rate_error": 0.07429
+      },
+      {
+        "t": 0.555,
+        "isaac": 0.265533,
+        "reference": 0.264645,
+        "error": 0.000888,
+        "isaac_rate": 1.888866,
+        "reference_rate": 1.996641,
+        "rate_error": -0.107775
+      },
+      {
+        "t": 0.605,
+        "isaac": 0.306363,
+        "reference": 0.309182,
+        "error": -0.002819,
+        "isaac_rate": 1.769683,
+        "reference_rate": 2.001081,
+        "rate_error": -0.231399
+      },
+      {
+        "t": 0.655,
+        "isaac": 0.345432,
+        "reference": 0.353625,
+        "error": -0.008193,
+        "isaac_rate": 1.747878,
+        "reference_rate": 1.998028,
+        "rate_error": -0.250151
+      },
+      {
+        "t": 0.705,
+        "isaac": 0.384336,
+        "reference": 0.398068,
+        "error": -0.013732,
+        "isaac_rate": 1.781721,
+        "reference_rate": 1.996475,
+        "rate_error": -0.214753
+      },
+      {
+        "t": 0.755,
+        "isaac": 0.424934,
+        "reference": 0.44234,
+        "error": -0.017406,
+        "isaac_rate": 1.897829,
+        "reference_rate": 2.007517,
+        "rate_error": -0.109688
+      },
+      {
+        "t": 0.805,
+        "isaac": 0.468774,
+        "reference": 0.486718,
+        "error": -0.017944,
+        "isaac_rate": 2.069257,
+        "reference_rate": 1.989019,
+        "rate_error": 0.080238
+      },
+      {
+        "t": 0.855,
+        "isaac": 0.516461,
+        "reference": 0.53111,
+        "error": -0.014649,
+        "isaac_rate": 2.231739,
+        "reference_rate": 1.999771,
+        "rate_error": 0.231968
+      },
+      {
+        "t": 0.905,
+        "isaac": 0.567353,
+        "reference": 0.575478,
+        "error": -0.008125,
+        "isaac_rate": 2.320146,
+        "reference_rate": 2.002098,
+        "rate_error": 0.318048
+      },
+      {
+        "t": 0.955,
+        "isaac": 0.619086,
+        "reference": 0.619828,
+        "error": -0.000743,
+        "isaac_rate": 2.279217,
+        "reference_rate": 1.998446,
+        "rate_error": 0.280771
+      },
+      {
+        "t": 1.005,
+        "isaac": 0.668827,
+        "reference": 0.664173,
+        "error": 0.004654,
+        "isaac_rate": 2.160598,
+        "reference_rate": 2.000826,
+        "rate_error": 0.159771
+      },
+      {
+        "t": 1.055,
+        "isaac": 0.714804,
+        "reference": 0.70851,
+        "error": 0.006294,
+        "isaac_rate": 1.982264,
+        "reference_rate": 1.997069,
+        "rate_error": -0.014805
+      },
+      {
+        "t": 1.105,
+        "isaac": 0.756841,
+        "reference": 0.752695,
+        "error": 0.004146,
+        "isaac_rate": 1.844599,
+        "reference_rate": 1.996528,
+        "rate_error": -0.151929
+      },
+      {
+        "t": 1.155,
+        "isaac": 0.796206,
+        "reference": 0.796897,
+        "error": -0.000691,
+        "isaac_rate": 1.768511,
+        "reference_rate": 1.997766,
+        "rate_error": -0.229255
+      },
+      {
+        "t": 1.205,
+        "isaac": 0.834687,
+        "reference": 0.84109,
+        "error": -0.006403,
+        "isaac_rate": 1.755183,
+        "reference_rate": 2.001935,
+        "rate_error": -0.246753
+      },
+      {
+        "t": 1.255,
+        "isaac": 0.87406,
+        "reference": 0.885305,
+        "error": -0.011245,
+        "isaac_rate": 1.830888,
+        "reference_rate": 1.999215,
+        "rate_error": -0.168327
+      },
+      {
+        "t": 1.305,
+        "isaac": 0.91615,
+        "reference": 0.929511,
+        "error": -0.013361,
+        "isaac_rate": 1.970483,
+        "reference_rate": 1.990412,
+        "rate_error": -0.019928
+      },
+      {
+        "t": 1.355,
+        "isaac": 0.961871,
+        "reference": 0.973558,
+        "error": -0.011687,
+        "isaac_rate": 2.152725,
+        "reference_rate": 1.984295,
+        "rate_error": 0.16843
+      },
+      {
+        "t": 1.405,
+        "isaac": 1.011456,
+        "reference": 1.017512,
+        "error": -0.006056,
+        "isaac_rate": 2.301989,
+        "reference_rate": 1.992158,
+        "rate_error": 0.309831
+      },
+      {
+        "t": 1.455,
+        "isaac": 1.063177,
+        "reference": 1.061865,
+        "error": 0.001312,
+        "isaac_rate": 2.332699,
+        "reference_rate": 1.989216,
+        "rate_error": 0.343483
+      },
+      {
+        "t": 1.505,
+        "isaac": 1.114182,
+        "reference": 1.10623,
+        "error": 0.007952,
+        "isaac_rate": 2.224266,
+        "reference_rate": 2.000039,
+        "rate_error": 0.224227
+      },
+      {
+        "t": 1.555,
+        "isaac": 1.162022,
+        "reference": 1.150586,
+        "error": 0.011435,
+        "isaac_rate": 2.057514,
+        "reference_rate": 1.994027,
+        "rate_error": 0.063487
+      },
+      {
+        "t": 1.605,
+        "isaac": 1.205854,
+        "reference": 1.194982,
+        "error": 0.010872,
+        "isaac_rate": 1.888587,
+        "reference_rate": 1.992828,
+        "rate_error": -0.104242
+      },
+      {
+        "t": 1.655,
+        "isaac": 1.246504,
+        "reference": 1.239385,
+        "error": 0.007118,
+        "isaac_rate": 1.781406,
+        "reference_rate": 2.002411,
+        "rate_error": -0.221005
+      },
+      {
+        "t": 1.705,
+        "isaac": 1.285419,
+        "reference": 1.283806,
+        "error": 0.001613,
+        "isaac_rate": 1.759529,
+        "reference_rate": 2.001653,
+        "rate_error": -0.242125
+      },
+      {
+        "t": 1.755,
+        "isaac": 1.324388,
+        "reference": 1.328224,
+        "error": -0.003835,
+        "isaac_rate": 1.792565,
+        "reference_rate": 1.991882,
+        "rate_error": -0.199317
+      },
+      {
+        "t": 1.805,
+        "isaac": 1.365133,
+        "reference": 1.372583,
+        "error": -0.00745,
+        "isaac_rate": 1.909473,
+        "reference_rate": 1.990124,
+        "rate_error": -0.080652
+      },
+      {
+        "t": 1.855,
+        "isaac": 1.409204,
+        "reference": 1.417026,
+        "error": -0.007822,
+        "isaac_rate": 2.06831,
+        "reference_rate": 1.998951,
+        "rate_error": 0.06936
+      },
+      {
+        "t": 1.905,
+        "isaac": 1.457192,
+        "reference": 1.461475,
+        "error": -0.004283,
+        "isaac_rate": 2.238657,
+        "reference_rate": 2.002723,
+        "rate_error": 0.235934
+      },
+      {
+        "t": 1.955,
+        "isaac": 1.508489,
+        "reference": 1.506089,
+        "error": 0.0024,
+        "isaac_rate": 2.327166,
+        "reference_rate": 1.997931,
+        "rate_error": 0.329235
+      }
+    ]
+  },
+  "step": {
+    "perturbation": {
+      "damping": 1.0,
+      "r_scale": 1.0,
+      "yaw0": 0.0,
+      "facet": 0.0,
+      "clamp": 1.0
+    },
+    "final_error": -0.417823,
+    "max_abs_error": 0.417823,
+    "final_rate_error": -0.927659,
+    "max_abs_rate_error": 0.944222,
+    "read_in": "yaw",
+    "series": [
+      {
+        "t": 0.005,
+        "isaac": 2.9e-05,
+        "reference": 2.9e-05,
+        "error": 0.0,
+        "isaac_rate": 0.009315,
+        "reference_rate": 0.009315,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.055,
+        "isaac": 0.001831,
+        "reference": 0.001831,
+        "error": 0.0,
+        "isaac_rate": 0.174497,
+        "reference_rate": 0.174497,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.105,
+        "isaac": 0.00784,
+        "reference": 0.00784,
+        "error": 0.0,
+        "isaac_rate": 0.381901,
+        "reference_rate": 0.381901,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.155,
+        "isaac": 0.018244,
+        "reference": 0.018244,
+        "error": 0.0,
+        "isaac_rate": 0.58683,
+        "reference_rate": 0.58683,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.205,
+        "isaac": 0.034154,
+        "reference": 0.034154,
+        "error": 0.0,
+        "isaac_rate": 0.821785,
+        "reference_rate": 0.821785,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.255,
+        "isaac": 0.053991,
+        "reference": 0.053991,
+        "error": 0.0,
+        "isaac_rate": 1.000033,
+        "reference_rate": 1.000033,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.305,
+        "isaac": 0.078505,
+        "reference": 0.078505,
+        "error": 0.0,
+        "isaac_rate": 1.204249,
+        "reference_rate": 1.204249,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.355,
+        "isaac": 0.106837,
+        "reference": 0.106837,
+        "error": 0.0,
+        "isaac_rate": 1.417898,
+        "reference_rate": 1.417898,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.405,
+        "isaac": 0.140024,
+        "reference": 0.140024,
+        "error": 0.0,
+        "isaac_rate": 1.609121,
+        "reference_rate": 1.609121,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.455,
+        "isaac": 0.177872,
+        "reference": 0.177872,
+        "error": 0.0,
+        "isaac_rate": 1.817777,
+        "reference_rate": 1.817777,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.505,
+        "isaac": 0.220253,
+        "reference": 0.220253,
+        "error": 0.0,
+        "isaac_rate": 1.99665,
+        "reference_rate": 1.99665,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.555,
+        "isaac": 0.264645,
+        "reference": 0.264645,
+        "error": 0.0,
+        "isaac_rate": 1.996641,
+        "reference_rate": 1.996641,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.605,
+        "isaac": 0.309182,
+        "reference": 0.309182,
+        "error": 0.0,
+        "isaac_rate": 2.001081,
+        "reference_rate": 2.001081,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.655,
+        "isaac": 0.353625,
+        "reference": 0.353625,
+        "error": 0.0,
+        "isaac_rate": 1.998028,
+        "reference_rate": 1.998028,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.705,
+        "isaac": 0.398068,
+        "reference": 0.398068,
+        "error": 0.0,
+        "isaac_rate": 1.996475,
+        "reference_rate": 1.996475,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.755,
+        "isaac": 0.44234,
+        "reference": 0.44234,
+        "error": 0.0,
+        "isaac_rate": 2.007517,
+        "reference_rate": 2.007517,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.805,
+        "isaac": 0.486718,
+        "reference": 0.486718,
+        "error": 0.0,
+        "isaac_rate": 1.989019,
+        "reference_rate": 1.989019,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.855,
+        "isaac": 0.53111,
+        "reference": 0.53111,
+        "error": 0.0,
+        "isaac_rate": 1.999771,
+        "reference_rate": 1.999771,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.905,
+        "isaac": 0.575478,
+        "reference": 0.575478,
+        "error": 0.0,
+        "isaac_rate": 2.002098,
+        "reference_rate": 2.002098,
+        "rate_error": 0.0
+      },
+      {
+        "t": 0.955,
+        "isaac": 0.619828,
+        "reference": 0.619828,
+        "error": 0.0,
+        "isaac_rate": 1.998446,
+        "reference_rate": 1.998446,
+        "rate_error": 0.0
+      },
+      {
+        "t": 1.005,
+        "isaac": 0.663426,
+        "reference": 0.664173,
+        "error": -0.000747,
+        "isaac_rate": 1.160286,
+        "reference_rate": 2.000826,
+        "rate_error": -0.84054
+      },
+      {
+        "t": 1.055,
+        "isaac": 0.687952,
+        "reference": 0.70851,
+        "error": -0.020558,
+        "isaac_rate": 1.068082,
+        "reference_rate": 1.997069,
+        "rate_error": -0.928987
+      },
+      {
+        "t": 1.105,
+        "isaac": 0.711234,
+        "reference": 0.752695,
+        "error": -0.041461,
+        "isaac_rate": 1.063078,
+        "reference_rate": 1.996528,
+        "rate_error": -0.93345
+      },
+      {
+        "t": 1.155,
+        "isaac": 0.734617,
+        "reference": 0.796897,
+        "error": -0.06228,
+        "isaac_rate": 1.086469,
+        "reference_rate": 1.997766,
+        "rate_error": -0.911298
+      },
+      {
+        "t": 1.205,
+        "isaac": 0.75777,
+        "reference": 0.84109,
+        "error": -0.08332,
+        "isaac_rate": 1.076892,
+        "reference_rate": 2.001935,
+        "rate_error": -0.925043
+      },
+      {
+        "t": 1.255,
+        "isaac": 0.781173,
+        "reference": 0.885305,
+        "error": -0.104132,
+        "isaac_rate": 1.089799,
+        "reference_rate": 1.999215,
+        "rate_error": -0.909417
+      },
+      {
+        "t": 1.305,
+        "isaac": 0.804325,
+        "reference": 0.929511,
+        "error": -0.125186,
+        "isaac_rate": 1.085648,
+        "reference_rate": 1.990412,
+        "rate_error": -0.904764
+      },
+      {
+        "t": 1.355,
+        "isaac": 0.827728,
+        "reference": 0.973558,
+        "error": -0.14583,
+        "isaac_rate": 1.074145,
+        "reference_rate": 1.984295,
+        "rate_error": -0.91015
+      },
+      {
+        "t": 1.405,
+        "isaac": 0.850877,
+        "reference": 1.017512,
+        "error": -0.166635,
+        "isaac_rate": 1.079433,
+        "reference_rate": 1.992158,
+        "rate_error": -0.912725
+      },
+      {
+        "t": 1.455,
+        "isaac": 0.874291,
+        "reference": 1.061865,
+        "error": -0.187574,
+        "isaac_rate": 1.085577,
+        "reference_rate": 1.989216,
+        "rate_error": -0.90364
+      },
+      {
+        "t": 1.505,
+        "isaac": 0.897559,
+        "reference": 1.10623,
+        "error": -0.208671,
+        "isaac_rate": 1.093179,
+        "reference_rate": 2.000039,
+        "rate_error": -0.90686
+      },
+      {
+        "t": 1.555,
+        "isaac": 0.920871,
+        "reference": 1.150586,
+        "error": -0.229715,
+        "isaac_rate": 1.082176,
+        "reference_rate": 1.994027,
+        "rate_error": -0.911852
+      },
+      {
+        "t": 1.605,
+        "isaac": 0.944267,
+        "reference": 1.194982,
+        "error": -0.250714,
+        "isaac_rate": 1.087934,
+        "reference_rate": 1.992828,
+        "rate_error": -0.904894
+      },
+      {
+        "t": 1.655,
+        "isaac": 0.967461,
+        "reference": 1.239385,
+        "error": -0.271924,
+        "isaac_rate": 1.076846,
+        "reference_rate": 2.002411,
+        "rate_error": -0.925565
+      },
+      {
+        "t": 1.705,
+        "isaac": 0.990867,
+        "reference": 1.283806,
+        "error": -0.292939,
+        "isaac_rate": 1.086487,
+        "reference_rate": 2.001653,
+        "rate_error": -0.915166
+      },
+      {
+        "t": 1.755,
+        "isaac": 1.014054,
+        "reference": 1.328224,
+        "error": -0.314169,
+        "isaac_rate": 1.081776,
+        "reference_rate": 1.991882,
+        "rate_error": -0.910106
+      },
+      {
+        "t": 1.805,
+        "isaac": 1.037462,
+        "reference": 1.372583,
+        "error": -0.33512,
+        "isaac_rate": 1.088877,
+        "reference_rate": 1.990124,
+        "rate_error": -0.901248
+      },
+      {
+        "t": 1.855,
+        "isaac": 1.060643,
+        "reference": 1.417026,
+        "error": -0.356382,
+        "isaac_rate": 1.079499,
+        "reference_rate": 1.998951,
+        "rate_error": -0.919452
+      },
+      {
+        "t": 1.905,
+        "isaac": 1.084086,
+        "reference": 1.461475,
+        "error": -0.37739,
+        "isaac_rate": 1.081847,
+        "reference_rate": 2.002723,
+        "rate_error": -0.920876
+      },
+      {
+        "t": 1.955,
+        "isaac": 1.10737,
+        "reference": 1.506089,
+        "error": -0.398719,
+        "isaac_rate": 1.093716,
+        "reference_rate": 1.997931,
+        "rate_error": -0.904215
+      }
+    ]
+  }
+}

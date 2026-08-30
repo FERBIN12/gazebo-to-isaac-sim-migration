@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<!-- Deliberately minimal: a flat plane and a light. The A/B baseline measurement
+     must measure the ROBOT, not an obstacle course. -->
+<sdf version="1.9">
+  <world name="flat">
+    <!-- GUI camera, tuned 2026-08-21.
+         Without this the default camera sits far out and the rover is a few
+         pixels on a 100 m grid, so a 0.77 m run barely changes any pixels
+         on screen even though the wheels are verifiably turning.
+         camera_pose puts the eye 2.2 m back, 1.6 m up, looking down ~25 deg.
+         follow_target keeps the rover framed as it drives, which is what makes
+         a straight-line run legible on screen. -->
+    <gui fullscreen="0">
+      <plugin filename="MinimalScene" name="3D View">
+        <gz-gui>
+          <title>3D View</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">docked</property>
+        </gz-gui>
+        <engine>ogre2</engine>
+        <scene>scene</scene>
+        <ambient_light>0.55 0.55 0.55</ambient_light>
+        <background_color>0.10 0.13 0.17</background_color>
+        <camera_pose>-2.2 -1.4 1.2 0 0.42 0.58</camera_pose>
+        <camera_clip><near>0.05</near><far>200</far></camera_clip>
+      </plugin>
+      <plugin filename="GzSceneManager" name="Scene Manager">
+        <gz-gui>
+          <property key="visible" type="bool">false</property>
+          <property key="showTitleBar" type="bool">false</property>
+          <property key="state" type="string">floating</property>
+          <property key="width" type="double">1</property>
+          <property key="height" type="double">1</property>
+        </gz-gui>
+      </plugin>
+      <plugin filename="InteractiveViewControl" name="Interactive view control">
+        <gz-gui>
+          <property key="visible" type="bool">false</property>
+          <property key="showTitleBar" type="bool">false</property>
+          <property key="state" type="string">floating</property>
+          <property key="width" type="double">1</property>
+          <property key="height" type="double">1</property>
+        </gz-gui>
+      </plugin>
+      <plugin filename="CameraTracking" name="Camera Tracking">
+        <gz-gui>
+          <property key="visible" type="bool">false</property>
+          <property key="showTitleBar" type="bool">false</property>
+          <property key="state" type="string">floating</property>
+          <property key="width" type="double">1</property>
+          <property key="height" type="double">1</property>
+        </gz-gui>
+      </plugin>
+      <plugin filename="WorldControl" name="World control">
+        <gz-gui>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="double" key="height">72</property>
+          <property type="string" key="state">floating</property>
+        </gz-gui>
+        <play_pause>true</play_pause>
+        <step>true</step>
+        <use_event>true</use_event>
+      </plugin>
+      <plugin filename="WorldStats" name="World stats">
+        <gz-gui>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">floating</property>
+        </gz-gui>
+        <sim_time>true</sim_time>
+        <real_time_factor>true</real_time_factor>
+      </plugin>
+    </gui>
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    <plugin filename="gz-sim-physics-system"          name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system"    name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-sensors-system"          name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.9 0.9 0.9 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <surface><friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction></surface>
+        </collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <material><ambient>0.4 0.4 0.4 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

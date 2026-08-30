@@ -1,0 +1,47 @@
+{
+  "engine": "gazebo-dart",
+  "window_s": 4.0,
+  "sensors": {
+    "scan": {
+      "messages": 41,
+      "span_sim_s": 4.0,
+      "declared_rate_hz": 10.0,
+      "achieved_rate_hz": 10.0,
+      "fraction_of_declared": 1.0,
+      "rate_ok": true,
+      "declared": {
+        "rate_hz": 10.0,
+        "samples": 640,
+        "range_min": 0.12,
+        "range_max": 12.0
+      },
+      "samples": 640,
+      "angle_min": -2.356,
+      "angle_max": 2.356,
+      "range_min_declared_in_msg": 0.12,
+      "range_max_declared_in_msg": 12.0,
+      "finite_returns": 378,
+      "infinite_returns": 262,
+      "observed_min": 2.3456,
+      "observed_max": 11.6085
+    },
+    "depth": {
+      "messages": 119,
+      "span_sim_s": 3.961,
+      "declared_rate_hz": 30.0,
+      "achieved_rate_hz": 29.79,
+      "fraction_of_declared": 0.993,
+      "rate_ok": true,
+      "declared": {
+        "rate_hz": 30.0,
+        "width": 640,
+        "height": 480,
+        "clip_near": 0.1,
+        "clip_far": 10.0
+      },
+      "width": 640,
+      "height": 480,
+      "encoding": "32FC1"
+    }
+  }
+}

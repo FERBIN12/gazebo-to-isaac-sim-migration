@@ -1,0 +1,15 @@
+{
+  "config": {
+    "collision_type": "Convex Hull",
+    "fix_base": false,
+    "merge_fixed_joints": false,
+    "allow_self_collision": false,
+    "collision_from_visuals": false,
+    "link_density": 0.0,
+    "robot_type": "Default"
+  },
+  "urdf": "/home/ferbin/gazebo-to-isaac-migration/data/rover.urdf",
+  "usd": "/home/ferbin/gazebo-to-isaac-migration/sim-workspace/isaac/rover.usd/rover/rover.usda",
+  "importer": "isaacsim.asset.importer.urdf",
+  "result": "/home/ferbin/gazebo-to-isaac-migration/sim-workspace/isaac/rover.usd/rover/rover.usda"
+}

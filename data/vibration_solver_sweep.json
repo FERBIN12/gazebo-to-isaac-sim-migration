@@ -1,0 +1,67 @@
+{
+  "engine": "isaac-physx",
+  "damping": 1.0,
+  "solver_position_iterations": [
+    4,
+    16,
+    64,
+    255
+  ],
+  "rows": [
+    {
+      "position_iterations": 4,
+      "wheel_velocity": {
+        "n": 500,
+        "reversals": 350,
+        "reversal_rate_hz": 140.0,
+        "peak_to_peak": 2.54991,
+        "mean": 1.83302,
+        "relative_p2p": 1.3911,
+        "oscillates": true
+      }
+    },
+    {
+      "position_iterations": 16,
+      "wheel_velocity": {
+        "n": 500,
+        "reversals": 310,
+        "reversal_rate_hz": 124.0,
+        "peak_to_peak": 2.50384,
+        "mean": 1.92507,
+        "relative_p2p": 1.30065,
+        "oscillates": true
+      }
+    },
+    {
+      "position_iterations": 64,
+      "wheel_velocity": {
+        "n": 500,
+        "reversals": 308,
+        "reversal_rate_hz": 123.2,
+        "peak_to_peak": 2.44529,
+        "mean": 2.00389,
+        "relative_p2p": 1.22027,
+        "oscillates": true
+      }
+    },
+    {
+      "position_iterations": 255,
+      "wheel_velocity": {
+        "n": 500,
+        "reversals": 327,
+        "reversal_rate_hz": 130.8,
+        "peak_to_peak": 2.81571,
+        "mean": 2.01475,
+        "relative_p2p": 1.39755,
+        "oscillates": true
+      }
+    }
+  ],
+  "relative_p2p_range": [
+    1.22027,
+    1.39755
+  ],
+  "monotone_decreasing": false,
+  "oscillates_at_every_setting": true,
+  "solver_fixes_the_ripple": false
+}

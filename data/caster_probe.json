@@ -1,0 +1,29 @@
+{
+  "engine": "isaac-physx",
+  "physics_dt": 0.005,
+  "commanded_linear_m_s": 0.4,
+  "settle_s": 1.5,
+  "base_height": {
+    "n": 500,
+    "reversals": 317,
+    "reversal_rate_hz": 126.8,
+    "peak_to_peak": 0.00028,
+    "mean": 0.07501,
+    "relative_p2p": 0.00376,
+    "oscillates": false
+  },
+  "caster_height": {
+    "n": 500,
+    "reversals": 306,
+    "reversal_rate_hz": 122.4,
+    "peak_to_peak": 0.00032,
+    "mean": 0.04943,
+    "relative_p2p": 0.00657,
+    "oscillates": false
+  },
+  "restitution_in_urdf": 0,
+  "restitution_in_world": 0,
+  "ground_restitution_set_here": 0.0,
+  "caster_chatters": false,
+  "base_chatters": false
+}

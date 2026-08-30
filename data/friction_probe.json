@@ -1,0 +1,15 @@
+{
+  "static": {
+    "mu_values_in_urdf": [
+      1.0,
+      0.05
+    ],
+    "urdf_text_scopes_in_stage": 6,
+    "physics_materials_in_stage": 0,
+    "values_survived": true,
+    "meaning_survived": false
+  },
+  "dyaw_physx_defaults": 1.551,
+  "gazebo_reference": 1.857,
+  "note": "binding the URDF frictions is measured in RUN.md and makes the spin WORSE, so the inert annotation is not the residual"
+}

@@ -1,0 +1,21 @@
+{
+  "robots": 1,
+  "steps": 200,
+  "dt": 0.005,
+  "ncpu": 16,
+  "load_start": [
+    3.42333984375,
+    5.3671875,
+    5.4970703125
+  ],
+  "load_end": [
+    3.37841796875,
+    5.265625,
+    5.46142578125
+  ],
+  "ms_per_step_render_off": 2.1163,
+  "ms_per_step_render_on": 10.2363,
+  "cost_ratio": 4.837,
+  "rtf_render_off": 2.3627,
+  "rtf_render_on": 0.4885
+}

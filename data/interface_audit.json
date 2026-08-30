@@ -1,0 +1,72 @@
+{
+  "expected": {
+    "/clock": "rosgraph_msgs/msg/Clock",
+    "/scan": "sensor_msgs/msg/LaserScan",
+    "/depth": "sensor_msgs/msg/Image",
+    "/diff_drive_base_controller/odom": "nav_msgs/msg/Odometry",
+    "/diff_drive_base_controller/cmd_vel": "geometry_msgs/msg/TwistStamped",
+    "/joint_states": "sensor_msgs/msg/JointState",
+    "/tf": "tf2_msgs/msg/TFMessage"
+  },
+  "live_count": 22,
+  "present": [
+    "/clock",
+    "/depth",
+    "/diff_drive_base_controller/cmd_vel",
+    "/diff_drive_base_controller/odom",
+    "/joint_states",
+    "/scan",
+    "/tf"
+  ],
+  "missing": [],
+  "wrong_type": [],
+  "rates": {
+    "/clock": 706.8945849000424,
+    "/depth": 25.967533648859355,
+    "/diff_drive_base_controller/cmd_vel": null,
+    "/diff_drive_base_controller/odom": 48.1652317763174,
+    "/joint_states": 85.11386624057891,
+    "/scan": 9.742207843836757
+  },
+  "silent": [
+    "/diff_drive_base_controller/cmd_vel"
+  ],
+  "tf_edges": [
+    [
+      "base_footprint",
+      "base_link"
+    ],
+    [
+      "base_link",
+      "caster"
+    ],
+    [
+      "base_link",
+      "left_wheel"
+    ],
+    [
+      "base_link",
+      "mast"
+    ],
+    [
+      "base_link",
+      "right_wheel"
+    ],
+    [
+      "camera_link",
+      "camera_optical_frame"
+    ],
+    [
+      "mast",
+      "camera_link"
+    ],
+    [
+      "mast",
+      "lidar_link"
+    ],
+    [
+      "odom",
+      "base_footprint"
+    ]
+  ]
+}

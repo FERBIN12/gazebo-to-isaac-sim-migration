@@ -1,0 +1,12 @@
+{
+  "engine": "gazebo-dart",
+  "wheel_angle_swept_rad": 8.1456,
+  "theoretical_sweep_rad": 3.501,
+  "sweep_error_fraction": 1.3266,
+  "rim_travel_m": 0.61092,
+  "dyaw_rad": 0.585,
+  "ground_travel_m": 0.08774,
+  "slip_fraction": null,
+  "instrument_trustworthy": false,
+  "verdict": "REJECTED: swept angle disagrees with theory by 133%; this instrument cannot resolve slip"
+}

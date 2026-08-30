@@ -1,0 +1,11 @@
+{
+  "engine": "isaac-physx",
+  "damping": 1.0,
+  "physics_dt": 0.005,
+  "wheel_angle_swept_rad": 3.4981,
+  "rim_travel_m": 0.26235,
+  "dyaw_rad": 1.551,
+  "ground_travel_m": 0.23265,
+  "slip_fraction": 0.1132,
+  "gazebo_reference_dyaw": 1.857
+}

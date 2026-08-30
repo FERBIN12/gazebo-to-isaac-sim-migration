@@ -1,0 +1,73 @@
+{
+  "engine": "isaac-physx",
+  "physics_dt": 0.005,
+  "secs": 4.0,
+  "settle_s": 1.5,
+  "commanded_body_spin_rad_s": 1.0,
+  "rows": [
+    {
+      "damping": 0.01,
+      "wheel_velocity": {
+        "n": 500,
+        "reversals": 212,
+        "reversal_rate_hz": 84.8,
+        "peak_to_peak": 1.45627,
+        "mean": 1.27179,
+        "relative_p2p": 1.14505,
+        "oscillates": true
+      },
+      "base_height": {
+        "n": 500,
+        "reversals": 314,
+        "reversal_rate_hz": 125.6,
+        "peak_to_peak": 0.00027,
+        "mean": 0.07501,
+        "relative_p2p": 0.00361,
+        "oscillates": false
+      }
+    },
+    {
+      "damping": 1.0,
+      "wheel_velocity": {
+        "n": 500,
+        "reversals": 325,
+        "reversal_rate_hz": 130.0,
+        "peak_to_peak": 2.17945,
+        "mean": 1.9895,
+        "relative_p2p": 1.09548,
+        "oscillates": true
+      },
+      "base_height": {
+        "n": 500,
+        "reversals": 328,
+        "reversal_rate_hz": 131.2,
+        "peak_to_peak": 0.00033,
+        "mean": 0.07503,
+        "relative_p2p": 0.00446,
+        "oscillates": false
+      }
+    },
+    {
+      "damping": 100.0,
+      "wheel_velocity": {
+        "n": 500,
+        "reversals": 312,
+        "reversal_rate_hz": 124.8,
+        "peak_to_peak": 1.6014,
+        "mean": 1.99249,
+        "relative_p2p": 0.80372,
+        "oscillates": true
+      },
+      "base_height": {
+        "n": 500,
+        "reversals": 330,
+        "reversal_rate_hz": 132.0,
+        "peak_to_peak": 0.00027,
+        "mean": 0.07503,
+        "relative_p2p": 0.0036,
+        "oscillates": false
+      }
+    }
+  ],
+  "any_oscillation_found": true
+}

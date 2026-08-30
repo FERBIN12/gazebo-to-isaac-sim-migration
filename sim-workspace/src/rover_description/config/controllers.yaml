@@ -1,0 +1,33 @@
+# The tuned controller stack. a later check measures it; a later check translates it.
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+    diff_drive_base_controller:
+      type: diff_drive_controller/DiffDriveController
+
+diff_drive_base_controller:
+  ros__parameters:
+    left_wheel_names:  ["left_wheel_joint"]
+    right_wheel_names: ["right_wheel_joint"]
+    # These two MUST agree with the xacro geometry or odometry lies. a later check
+    # verifies them against measured travel rather than trusting them.
+    wheel_separation: 0.30
+    wheel_radius: 0.075
+    publish_rate: 50.0
+    base_frame_id: base_footprint
+    odom_frame_id: odom
+    enable_odom_tf: true
+    open_loop: false
+    use_stamped_vel: false
+    # 0.8 m/s is ABOVE what the 8 rad/s joint limit allows (0.6 m/s), so this
+    # value has never been achievable. BOTH engines clamp at 8.000 rad/s: an
+    # earlier version of this comment claimed Gazebo ignored the limit and only
+    # Isaac enforced it, which was measured on the Isaac side only and is wrong.
+    # a later check measures both and carries the correction.
+    linear.x.max_velocity: 0.8
+    linear.x.min_velocity: -0.8
+    linear.x.max_acceleration: 1.0
+    angular.z.max_velocity: 1.5
+    angular.z.max_acceleration: 2.0

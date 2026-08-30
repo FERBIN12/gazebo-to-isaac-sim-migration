@@ -1,0 +1,102 @@
+{
+  "tolerances": {
+    "dx": {
+      "abs": 0.072,
+      "unit": "m",
+      "why": "10% of predicted travel"
+    },
+    "dy": {
+      "abs": 0.02,
+      "unit": "m",
+      "why": "wheel symmetry, not physics"
+    },
+    "dyaw": {
+      "abs": 0.05,
+      "unit": "rad",
+      "why": "2.9 deg, Nav2-relevant"
+    },
+    "peak_wheel_m_s": {
+      "abs": 0.02,
+      "unit": "m/s",
+      "why": "5% of 0.400, kinematic"
+    }
+  },
+  "rows": [
+    {
+      "run": "straight",
+      "field": "dx",
+      "gazebo": 0.7266928612855318,
+      "isaac": 0.6817242876984174,
+      "diff": -0.04496857358711437,
+      "tol": 0.072,
+      "within": true
+    },
+    {
+      "run": "straight",
+      "field": "dy",
+      "gazebo": -7.520780328954847e-05,
+      "isaac": -0.0002729553672515434,
+      "diff": -0.0001977475639619949,
+      "tol": 0.02,
+      "within": true
+    },
+    {
+      "run": "straight",
+      "field": "dyaw",
+      "gazebo": -0.00011422941665628628,
+      "isaac": -0.0016533371031044858,
+      "diff": -0.0015391076864481996,
+      "tol": 0.05,
+      "within": true
+    },
+    {
+      "run": "straight",
+      "field": "peak_wheel_m_s",
+      "gazebo": 0.40000000015386317,
+      "isaac": 0.4043972253799438,
+      "diff": 0.004397225226080659,
+      "tol": 0.02,
+      "within": true
+    },
+    {
+      "run": "spin",
+      "field": "dx",
+      "gazebo": 0.02098899075688099,
+      "isaac": -0.001668631136989606,
+      "diff": -0.0226576218938706,
+      "tol": 0.072,
+      "within": true
+    },
+    {
+      "run": "spin",
+      "field": "dy",
+      "gazebo": 0.00012912993985995152,
+      "isaac": -0.0014817604779869538,
+      "diff": -0.0016108904178469053,
+      "tol": 0.02,
+      "within": true
+    },
+    {
+      "run": "spin",
+      "field": "dyaw",
+      "gazebo": 1.7652599995524112,
+      "isaac": 0.9257070784922578,
+      "diff": -0.8395529210601534,
+      "tol": 0.05,
+      "within": false
+    },
+    {
+      "run": "spin",
+      "field": "peak_wheel_m_s",
+      "gazebo": 0.20899999999780725,
+      "isaac": 0.18233866095542908,
+      "diff": -0.026661339042378163,
+      "tol": 0.02,
+      "within": false
+    }
+  ],
+  "fails": [
+    "spin.dyaw: +1.765 vs +0.926 = -0.840 rad, outside +/-0.05 (2.9 deg, Nav2-relevant)",
+    "spin.peak_wheel_m_s: +0.209 vs +0.182 = -0.027 m/s, outside +/-0.02 (5% of 0.400, kinematic)"
+  ]
+}

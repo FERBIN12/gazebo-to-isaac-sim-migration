@@ -1,0 +1,18 @@
+{
+  "engine": "gazebo-dart",
+  "sample_rate_hz": 100.0,
+  "nyquist_hz": 50.0,
+  "secs": 4.0,
+  "settle_s": 1.5,
+  "wheel_velocity": {
+    "n": 429,
+    "reversals": 172,
+    "reversal_rate_hz": 40.09,
+    "peak_to_peak": 0.23333,
+    "mean": 2.03344,
+    "relative_p2p": 0.11475,
+    "oscillates": true
+  },
+  "can_see_isaac_band": false,
+  "verdict": "INCONCLUSIVE: sampled below Nyquist for the 85-130 Hz band"
+}

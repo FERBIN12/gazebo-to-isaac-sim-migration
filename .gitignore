@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.DS_Store
+sim-workspace/build/
+sim-workspace/install/
+sim-workspace/log/
+*.mp4
+*.wav
+*.onnx
+*.bin
+*.pt

@@ -1,0 +1,25 @@
+{
+  "engine": "isaac-physx",
+  "physics_dt": 0.005,
+  "friction": "physx-default",
+  "wheel_radius": 0.075,
+  "track": 0.3,
+  "dof_names": [
+    "left_wheel_joint",
+    "right_wheel_joint"
+  ],
+  "straight": {
+    "dx": 0.6817242876984174,
+    "dy": -0.0002729553672515434,
+    "dyaw": -0.0016533371031044858,
+    "peak_wheel_m_s": 0.4043972253799438,
+    "predict": 0.7200000000000002
+  },
+  "spin": {
+    "dx": -0.001668631136989606,
+    "dy": -0.0014817604779869538,
+    "dyaw": 0.9257070784922578,
+    "peak_wheel_m_s": 0.18233866095542908,
+    "predict": 1.75
+  }
+}

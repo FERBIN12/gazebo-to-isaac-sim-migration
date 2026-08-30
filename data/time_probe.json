@@ -1,0 +1,30 @@
+{
+  "use_sim_time": {
+    "/controller_manager": true,
+    "/diff_drive_base_controller": true,
+    "/gz_ros_control": false,
+    "/joint_state_broadcaster": true,
+    "/robot_state_publisher": true,
+    "/ros_gz_bridge": true
+  },
+  "rtf": 0.9951785034245465,
+  "sim_now": 63.074,
+  "wall_now": 1787420571.0220923,
+  "stamps": {
+    "/scan": {
+      "n": 50,
+      "last": 63.0,
+      "clock": "sim"
+    },
+    "odom": {
+      "n": 203,
+      "last": 63.07,
+      "clock": "sim"
+    },
+    "/joint_states": {
+      "n": 405,
+      "last": 63.079,
+      "clock": "sim"
+    }
+  }
+}
