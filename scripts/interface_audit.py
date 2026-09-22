@@ -1,7 +1,7 @@
 """Enumerate the ROS 2 interface this stack actually presents, and diff it
 against what the stack EXPECTS.
 
-Why this exists: notes 6.9 concluded that a numeric tolerance cannot catch an
+Why this exists: write-up 6.9 concluded that a numeric tolerance cannot catch an
 absence, and that an existence check has to come first. this repo's condition is
 already binary ("every topic the stack expects exists, carries the right type,
 and updates at a rate something downstream can use"), so this is that check,

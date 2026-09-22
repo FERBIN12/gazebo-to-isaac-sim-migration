@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- Deliberately minimal: a flat plane and a light. The A/B baseline measurement
-     must measure the ROBOT, not an obstacle course. -->
+     must measure the ROBOT, not an obstacle field. -->
 <sdf version="1.9">
   <world name="flat">
     <!-- GUI camera, tuned 2026-08-21.

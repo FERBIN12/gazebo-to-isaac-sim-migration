@@ -4,7 +4,7 @@
 A DIFFERENT KIND OF CHECK FROM EVERYTHING ELSE IN THIS REPO. Every other check
 here is a TRANSFER check: does the stage hold what the file said. Those cannot
 answer whether the file was right, and this robot's chassis is the proof --
-notes 1.4 planted a solid-box tensor on what is described as a hollow shell,
+write-up 1.4 planted a solid-box tensor on what is described as a hollow shell,
 and Gazebo, PhysX and the readback all carried it faithfully. A equals B says
 nothing about A.
 

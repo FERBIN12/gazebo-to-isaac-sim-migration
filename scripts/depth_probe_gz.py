@@ -1,6 +1,6 @@
 """Measure what a Gazebo depth image ACTUALLY contains, value by value.
 
-Notes 6.4 claims both simulators produce a depth image and both are "wrong in
+Write-up 6.4 claims both simulators produce a depth image and both are "wrong in
 different ways". That is a claim about VALUES, not about rates, so measuring the
 rate (6.7) does not support it. This measures the values.
 

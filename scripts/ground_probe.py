@@ -11,7 +11,7 @@ TWO QUESTIONS, because they have different answers:
      the turn. The shape of that curve says how close to slipping we are.
 
   2. Does the wheel-to-caster RATIO matter more than the absolute values?
-     Notes 5.2 argued it does, from the fact that binding the URDF frictions
+     Write-up 5.2 argued it does, from the fact that binding the URDF frictions
      (wheels 1.0, caster 0.05) made the spin WORSE than uniform defaults. That
      was an explanation offered for someone else's measurement; this tests it.
 

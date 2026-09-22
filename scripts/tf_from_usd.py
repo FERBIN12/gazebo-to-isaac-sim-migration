@@ -11,7 +11,7 @@ not "do the two trees match" but "does the stage CONTAIN the tree".
 Two different structures in the stage encode it, and they do not agree in count:
   * the Xform nesting     -- parent/child by containment
   * the joint prims       -- body0/body1 pairs in the physics layer
-Notes 4.1 measured that 2 of the 8 URDF joints get NO prim (a fixed joint to a
+Write-up 4.1 measured that 2 of the 8 URDF joints get NO prim (a fixed joint to a
 massless frame is baked into the hierarchy instead), so the joint-prim count is
 expected to be short. The hierarchy is the authoritative one.
 

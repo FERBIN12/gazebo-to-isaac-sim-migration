@@ -1,9 +1,8 @@
 """Sweep the PhysX wheel-drive gain and measure what the joint actually does.
 
-THIS IS THE SCRIPT SECTION 4.3 NARRATES AND 4.4 TURNS INTO A PROCEDURE, and
-until now it did not exist: the sweep table in RUN.md was produced by hand.
-A notes that says "here is the measurement" must be runnable by the student,
-so this reproduces the table from scratch and writes it as JSON.
+Until this script existed, the sweep table in RUN.md was produced by hand.
+A claim that says "here is the measurement" must be runnable by anyone, so
+this reproduces the table from scratch and writes it as JSON.
 
 WHAT IT MEASURES. Command a constant wheel velocity and record two things per
 gain:

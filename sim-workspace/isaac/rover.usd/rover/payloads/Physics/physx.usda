@@ -13,7 +13,7 @@ Generated from Composed Stage of root layer /tmp/urdf_import_rover_jfzx9xae/usde
 Generated from Composed Stage of root layer /tmp/urdf_import_rover_jfzx9xae/temp_rover/rover.usd
 
 
-Generated from Composed Stage of root layer /home/ferbin/gazebo-to-isaac-migration/sim-workspace/isaac/rover.usd/rover/payloads/base.usd
+Generated from Composed Stage of root layer sim-workspace/isaac/rover.usd/rover/payloads/base.usd
 """
     kilogramsPerUnit = 1
     metersPerUnit = 1

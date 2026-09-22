@@ -1,6 +1,6 @@
 """Measure wheel slip directly, and test the a later check prediction.
 
-THE PREDICTION (notes 5.1): the robot's wheels turn the correct amount and
+THE PREDICTION (write-up 5.1): the robot's wheels turn the correct amount and
 the robot rotates 16.4 % less than it should, so the difference went into
 SLIDING rather than into turning the robot. That is slip, and it is the only
 mechanism I could name that converts correct wheel motion into insufficient
@@ -42,7 +42,7 @@ SECS = 2.0
 CMD_W = 1.0
 MAX_ANG_ACCEL = 2.0
 DEG_PER_RAD = 180.0 / math.pi
-DAMPING = 1.0          # the gain notes 4.4 chose
+DAMPING = 1.0          # the gain write-up 4.4 chose
 
 
 def slip_fraction(rim_travel, ground_travel):

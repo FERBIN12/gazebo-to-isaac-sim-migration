@@ -613,8 +613,8 @@ reports `inherits` and does not fail it. Only a stated disagreement fails.
 
 ## Meshes and `package://` (a later check): the robot now HAS a mesh
 
-The robot was entirely primitives until 2026-08-21, even though notes 1.4
-(shipped) tells students "the mesh paths in this description use the package
+The robot was entirely primitives until 2026-08-21, even though an earlier
+write-up claimed "the mesh paths in this description use the package
 protocol". It now has one, so that claim is true:
 
 `sim-workspace/src/rover_description/meshes/lidar_housing.stl` — a generated
@@ -672,7 +672,7 @@ had changed the physics. It had not.
 | left running a long time, 3 runs | 0.781 0.773 0.771 | 0.775 |
 
 That is a **50 mm difference from nothing but sim uptime**, which is 69% of the
-72 mm tolerance the A/B diff declares. Notes 2.7 shipped quoting 0.725, and
+72 mm tolerance the A/B diff declares. Write-up 2.7 shipped quoting 0.725, and
 the fresh-sim mean is exactly 0.725, so it is right -- but only because that
 run happened to be on a freshly started sim.
 
@@ -936,7 +936,7 @@ is far larger. What is NOT safe to say: that Gazebo is smooth.
 # -> data/vibration_solver_sweep.json
 ```
 
-Notes 4.8 raised the obvious hypothesis: the 4.7 wheel ripple is a solver
+Write-up 4.8 raised the obvious hypothesis: the 4.7 wheel ripple is a solver
 artefact, and raising the **articulation's** iteration counts (not the scene's)
 would reduce it. Tested at damping 1.0:
 
@@ -1504,7 +1504,7 @@ Against an illustrative sensor with **half** the per-beam error (0.005 m) but
 
 So a sensor twice as accurate per beam can be **12.6x worse** in pose. I first
 wrote "more than ten times worse", which is true but vague; the exact figure is
-12.6x and the VO now says that.
+12.6x and the write-up now says that.
 
 **Status of each half.** The 0.01 m stddev, the independent draw and the 640
 beams are measured facts about our Gazebo lidar. The 0.005 m correlated
@@ -1514,7 +1514,7 @@ explicitly.
 
 ## 7.1 — the interface, DERIVED not typed (2026-08-22, `scripts/interface_audit.py`)
 
-Notes 6.9 concluded that a tolerance cannot catch an absence and an existence
+Write-up 6.9 concluded that a tolerance cannot catch an absence and an existence
 check has to come first. this repo's condition is already binary, so this is
 that check written as code.
 
@@ -1638,7 +1638,7 @@ which is produced by the controller at runtime, not by the description.
 
 Three asymmetries, each with a reason:
 
-- **6 joint prims, not 8.** Exactly the two joints notes 4.1 measured as
+- **6 joint prims, not 8.** Exactly the two joints write-up 4.1 measured as
   having no prim — `base_joint` and `camera_optical_joint`, both fixed joints to
   a massless frame, baked into the hierarchy instead. So the joint-prim count is
   expected to be short and the **hierarchy** is authoritative.
@@ -1963,7 +1963,7 @@ unchanged". **There is no Nav2 configuration in this repository.** Measured:
 So there is no tuned Nav2 config to run unchanged, and 8.1 cannot be the notes
 the row describes.
 
-### And notes 4.2 named the wrong file — a shipped error
+### And write-up 4.2 named the wrong file — a shipped error
 
 4.2 says, three times, "the **Nav2 configuration** asks for nought point eight
 metres per second". The 0.8 is real and the finding built on it is intact, but it
@@ -2176,7 +2176,7 @@ That inverts the usual instinct, which is to reach for a better sensor.
 
 ## 8.7 — the regression suite, and a check that passed on nothing (2026-08-22)
 
-`scripts/regression_suite.py`. Notes 1.7 promised the conditions would live
+`scripts/regression_suite.py`. Write-up 1.7 promised the conditions would live
 "in one file in the repository, with the conditions as executable checks rather
 than prose". This is that file.
 

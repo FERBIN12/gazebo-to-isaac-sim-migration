@@ -1,6 +1,6 @@
 """Measure the real-time factor honestly, under stated load, on this machine.
 
-Notes 8.5 is "Performance: real-time factor, honestly", and the honesty is the
+Write-up 8.5 is "Performance: real-time factor, honestly", and the honesty is the
 hard part: RTF is not a property of a simulator. It is a property of a
 simulator, a scene, a machine, and whatever else that machine is doing. A single
 number with none of that stated is not a measurement.

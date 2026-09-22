@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """a later check: import the rover URDF into Isaac Sim, from a SCRIPT.
 
-WHY THIS IS A SCRIPT AND NOT THE GUI IMPORTER DIALOG (notes 3.1):
+WHY THIS IS A SCRIPT AND NOT THE GUI IMPORTER DIALOG (write-up 3.1):
 Isaac Sim offers three paths from a URDF -- a GUI extension, this Python API,
 and command line tooling -- and they do not produce identical results, because
 they expose different defaults. The GUI dialog also REMEMBERS your last
@@ -11,7 +11,7 @@ says why.
 
 That is only true if the script PRINTS THE PARAMETERS IT USED, so it does,
 every run, before importing anything. Those printed values are the "five
-guesses" of notes 3.1: they are settings the URDF never stated and the
+guesses" of write-up 3.1: they are settings the URDF never stated and the
 importer had to decide.
 
 Run:
@@ -44,7 +44,7 @@ PARAMS = BASE / "data/import_params.json"
 # THE IMPORT SETTINGS, DECLARED HERE RATHER THAN LEFT DEFAULT.
 #
 # Every one of these is a decision the URDF does not contain. They are written
-# down so the run is reproducible and so notes 3.1 can show them on screen as
+# down so the run is reproducible and so write-up 3.1 can show them on screen as
 # what they are: guesses, made by something other than the robot's author.
 #
 #   collision_type     'Convex Hull' is the importer default. It is also the
@@ -55,11 +55,11 @@ PARAMS = BASE / "data/import_params.json"
 #                      root is bolted down, so the importer has to be told.
 #   merge_fixed_joints False: KEEP the fixed-joint structure. Merging is often
 #                      faster in PhysX but it destroys the link-by-link
-#                      correspondence every measurement in this section needs.
+#                      correspondence every later measurement needs.
 #   allow_self_collision False: enabling it broadly makes the robot touch its
 #                      own wheels at rest (3.1 s11).
 #   joint_drive_type / stiffness / damping are left None DELIBERATELY, so that
-#                      section 4 can show that the drives are not in the file.
+#                      the drive audit can show that the drives are not in the file.
 CONFIG = {
     "collision_type": "Convex Hull",
     "fix_base": False,

@@ -1,4 +1,4 @@
-"""The overall condition from notes 1.7: the same mission, 20 runs per engine.
+"""The overall condition from write-up 1.7: the same mission, 20 runs per engine.
 
 > "Run the same mission on both simulators, twenty times each, and the
 >  completion rate must agree within ten percent, with no failure mode present

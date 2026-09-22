@@ -1,6 +1,6 @@
 """Measure which clock each node on the stack is actually reading.
 
-Notes 5.3 cost a day to integrating on the wall clock while the simulator ran
+Write-up 5.3 cost a day to integrating on the wall clock while the simulator ran
 on its own, and 7.1 measured /scan at 2.96 Hz for a related reason. So this
 measures rather than reading the launch file.
 

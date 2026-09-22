@@ -8,8 +8,8 @@
     "link_density": 0.0,
     "robot_type": "Default"
   },
-  "urdf": "/home/ferbin/gazebo-to-isaac-migration/data/rover.urdf",
-  "usd": "/home/ferbin/gazebo-to-isaac-migration/sim-workspace/isaac/rover.usd/rover/rover.usda",
+  "urdf": "data/rover.urdf",
+  "usd": "sim-workspace/isaac/rover.usd/rover/rover.usda",
   "importer": "isaacsim.asset.importer.urdf",
-  "result": "/home/ferbin/gazebo-to-isaac-migration/sim-workspace/isaac/rover.usd/rover/rover.usda"
+  "result": "sim-workspace/isaac/rover.usd/rover/rover.usda"
 }

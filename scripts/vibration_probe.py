@@ -1,6 +1,6 @@
 """Look for an Isaac-only vibration, and be willing to find nothing.
 
-WHY THIS EXISTS. The curriculum promises notes 4.7, "the vibration that
+WHY THIS EXISTS. The curriculum promises write-up 4.7, "the vibration that
 appears only in Isaac", as a FAILURE notes. Nothing in this repository has
 ever measured such a vibration. a later check is the notes about asserting one
 side of a comparison without running it, and 4.3 is the notes about
@@ -49,7 +49,7 @@ SETTLE_S = 1.5
 # if a gain-driven oscillation exists anywhere, a stiff drive is where it lives.
 GAINS = [0.01, 1.0, 100.0]
 
-# Notes 4.8 left an obvious untested hypothesis: that the ripple is a solver
+# Write-up 4.8 left an obvious untested hypothesis: that the ripple is a solver
 # artefact, and that raising the ARTICULATION's iteration counts (not the
 # scene's) would reduce it. --solver runs the same measurement at gain 1.0
 # across a sweep of position-iteration counts so 4.9 can answer it instead of

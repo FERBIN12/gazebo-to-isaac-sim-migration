@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """a later check: read the IMPORTED stage back, and diff it against the URDF.
 
-This is the measurement notes 3.2 is built on, and it exists because the
+This is the measurement write-up 3.2 is built on, and it exists because the
 alternative is looking at the viewport and saying it looks right. The defect
 this catches is invisible in the viewport.
 

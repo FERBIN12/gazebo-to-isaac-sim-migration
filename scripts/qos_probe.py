@@ -1,7 +1,7 @@
 """Measure the QoS every publisher on this stack OFFERS, and which subscriber
 profiles would silently get nothing from it.
 
-Notes 7.3 is about "the subscriber that silently got nothing", and I hit that
+Write-up 7.3 is about "the subscriber that silently got nothing", and I hit that
 failure myself in 7.1: I subscribed to /tf_static with default QoS and received
 zero messages, which made every fixed joint in the robot read as absent.
 
